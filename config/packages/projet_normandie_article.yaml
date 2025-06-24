@@ -1,0 +1,7 @@
+projet_normandie_article:
+  default_locale: 'en'
+  supported_locales:
+    - 'en'
+    - 'fr'
+    - 'es'
+    - 'de'
