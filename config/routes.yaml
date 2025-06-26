@@ -7,3 +7,7 @@ controllers:
 projet_normandie_user:
     resource: "@ProjetNormandieUserBundle/Controller/"
     type: attribute
+
+video_games_records_core:
+    resource: "@VideoGamesRecordsCoreBundle/Controller/"
+    type: attribute
