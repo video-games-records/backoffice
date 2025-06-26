@@ -18,7 +18,31 @@ dh_auditor:
                         - nbConnexion
                         - extraData
                         - avatar
-
+                VideoGamesRecords\CoreBundle\Entity\Game:
+                    ignored_columns:
+                        - nbChart
+                        - nbPost
+                        - nbPlayer
+                        - nbVideo
+                        - nbTeam
+                        - forum
+                        - lastUpdate
+                        - lastScore
+                VideoGamesRecords\CoreBundle\Entity\Platform:
+                VideoGamesRecords\CoreBundle\Entity\Serie:
+                    ignored_columns:
+                        - nbChart
+                        - nbGame
+                VideoGamesRecords\CoreBundle\Entity\Rule:
+                VideoGamesRecords\CoreBundle\Entity\ChartType:
+                VideoGamesRecords\CoreBundle\Entity\PlayerChart:
+                    ignored_columns:
+                        - rank
+                        - nbEqual
+                        - pointChart
+                        - pointPlatform
+                        - isTopScore
+                        - platform
 
             storage_services:
                 - '@doctrine.orm.audit_entity_manager'

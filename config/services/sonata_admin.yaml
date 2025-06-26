@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  admin.block.service.stats:
+    class: App\Block\Service\StatsBlockService
+    public: true
+    tags:
+      - { name: "sonata.block" }

@@ -8,6 +8,13 @@ doctrine:
                 use_savepoints: true
                 mapping_types:
                     enum: string
+            dwh:
+                driver: pdo_mysql
+                url: '%env(resolve:DATABASE_URL_DWH)%'
+                charset: UTF8
+                use_savepoints: true
+                mapping_types:
+                    enum: string
             audit:
                 driver: pdo_mysql
                 url: '%env(resolve:DATABASE_URL_AUDIT)%'
@@ -35,12 +42,22 @@ doctrine:
                         dir: '%kernel.project_dir%/src/Entity'
                         prefix: 'App\Entity'
                         alias: App
+            dwh:
+                connection: dwh
+                naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+                mappings:
+                    VideoGamesRecordsDwhBundle: ~
             audit:
                 connection: audit
                 naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         resolve_target_entities:
             # User
+            VideoGamesRecords\CoreBundle\Entity\UserInterface: ProjetNormandie\UserBundle\Entity\User
             ProjetNormandie\ArticleBundle\Entity\UserInterface: ProjetNormandie\UserBundle\Entity\User
+            ProjetNormandie\MessageBundle\Entity\UserInterface: ProjetNormandie\UserBundle\Entity\User
+            ProjetNormandie\ForumBundle\Entity\UserInterface: ProjetNormandie\UserBundle\Entity\User
+            # Forum
+            VideoGamesRecords\CoreBundle\Entity\ForumInterface: ProjetNormandie\ForumBundle\Entity\Forum
 
 when@test:
     doctrine:

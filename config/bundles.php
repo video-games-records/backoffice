@@ -1,8 +1,12 @@
 <?php
 
 return [
-    //VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreBundle::class => ['all' => true],
-    //VideoGamesRecords\DwhBundle\VideoGamesRecordsDwhBundle::class => ['all' => true],
+    ProjetNormandie\ForumBundle\ProjetNormandieForumBundle::class => ['all' => true],
+    ProjetNormandie\MessageBundle\ProjetNormandieMessageBundle::class => ['all' => true],
+    ProjetNormandie\PartnerBundle\ProjetNormandiePartnerBundle::class => ['all' => true],
+    ProjetNormandie\TwitchBundle\ProjetNormandieTwitchBundle::class => ['all' => true],
+    VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreBundle::class => ['all' => true],
+    VideoGamesRecords\DwhBundle\VideoGamesRecordsDwhBundle::class => ['all' => true],
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
@@ -35,4 +39,5 @@ return [
     Zenstruck\Messenger\Monitor\ZenstruckMessengerMonitorBundle::class => ['all' => true],
     DAMA\DoctrineTestBundle\DAMADoctrineTestBundle::class => ['test' => true],
     Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle::class => ['dev' => true, 'test' => true],
+    Aws\Symfony\AwsBundle::class => ['all' => true],
 ];
