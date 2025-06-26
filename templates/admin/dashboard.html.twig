@@ -1,0 +1,78 @@
+{% extends '@SonataAdmin/standard_layout.html.twig' %}
+{% block content %}
+    <h2>Game</h2>
+    <div class="row">
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusCreated',
+            'title' : 'CREATED',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=CREATED',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-pencil'
+        }) }}
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusAddScore',
+            'title' : 'ADD SCORE',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=ADD_SCORE',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-trophy'
+        }) }}
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusAddPicture',
+            'title' : 'ADD PICTURE',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=ADD_PICTURE',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-file-image-o'
+        }) }}
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusCompleted',
+            'title' : 'COMPLETED',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=COMPLETED',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-file-image-o'
+        }) }}
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusActive',
+            'title' : 'ACTIVE',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=ACTIVE',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-file-image-o'
+        }) }}
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Game',
+            'repository_method' : 'countStatusInactive',
+            'title' : 'INACTIVE',
+            'url' : '/admin/videogamesrecords/core/game/list?filter%5Bstatus%5D%5Bvalue%5D=INACTIVE',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-file-image-o'
+        }) }}
+    </div>
+    <h2>Proof Request</h2>
+    <div class="row">
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\ProofRequest',
+            'repository_method' : 'countInProgress',
+            'title' : 'IN PROGESS',
+            'url' : '/admin/videogamesrecords/core/proofrequest/list?filter%5Bstatus%5D%5Bvalue%5D=IN+PROGRESS',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-exclamation-triangle'
+        }) }}
+    </div>
+    <h2>Proof</h2>
+    <div class="row">
+        {{ sonata_block_render({ 'type': 'admin.block.service.stats' }, {
+            'entity' : 'VideoGamesRecords\\CoreBundle\\Entity\\Proof',
+            'repository_method' : 'countInProgress',
+            'title' : 'IN PROGESS',
+            'url' : '/admin/videogamesrecords/core/proof/list?filter%5Bstatus%5D%5Bvalue%5D=IN+PROGRESS',
+            'css_class' : 'bg-gray-active',
+            'icon' : 'fa fa-file'
+        }) }}
+        <br />
+    </div>
+    {{ sonata_block_render({ 'type': 'admin.block.service.proof.games' }, ) }}
+{% endblock %}

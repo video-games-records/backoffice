@@ -1,0 +1,33 @@
+framework:
+    workflows:
+        game_status:
+            type: 'state_machine'
+            marking_store:
+                type: 'method'
+                property: 'status'
+            supports:
+                - VideoGamesRecords\CoreBundle\Entity\Game
+            initial_marking: CREATED
+            places:
+                - CREATED
+                - ADD_SCORE
+                - ADD_PICTURE
+                - COMPLETED
+                - ACTIVE
+                - INACTIVE
+            transitions:
+                add_score:
+                    from: CREATED
+                    to: ADD_SCORE
+                add_picture:
+                    from: ADD_SCORE
+                    to: ADD_PICTURE
+                completed:
+                    from: ADD_PICTURE
+                    to: COMPLETED
+                activate:
+                    from: [ COMPLETED, INACTIVE ]
+                    to: ACTIVE
+                desactivate:
+                    from: ACTIVE
+                    to: INACTIVE
