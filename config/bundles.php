@@ -2,9 +2,9 @@
 
 return [
     ProjetNormandie\ForumBundle\ProjetNormandieForumBundle::class => ['all' => true],
-    ProjetNormandie\MessageBundle\ProjetNormandieMessageBundle::class => ['all' => true],
-    ProjetNormandie\PartnerBundle\ProjetNormandiePartnerBundle::class => ['all' => true],
-    ProjetNormandie\TwitchBundle\ProjetNormandieTwitchBundle::class => ['all' => true],
+    //ProjetNormandie\MessageBundle\ProjetNormandieMessageBundle::class => ['all' => true],
+    //ProjetNormandie\PartnerBundle\ProjetNormandiePartnerBundle::class => ['all' => true],
+    //ProjetNormandie\TwitchBundle\ProjetNormandieTwitchBundle::class => ['all' => true],
     VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreBundle::class => ['all' => true],
     VideoGamesRecords\DwhBundle\VideoGamesRecordsDwhBundle::class => ['all' => true],
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
