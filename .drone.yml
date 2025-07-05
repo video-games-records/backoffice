@@ -13,7 +13,7 @@ steps:
   - name: build
     image: jakzal/phpqa:php8.3-alpine
     commands:
-      - composer install --optimize-autoloader
+      - composer install --optimize-autoloader --ignore-platform-reqs
       - composer dump-autoload --classmap-authoritative
     depends_on:
       - quality

@@ -194,6 +194,9 @@
     "projet-normandie/article-bundle": {
         "version": "dev-main"
     },
+    "projet-normandie/forum-bundle": {
+        "version": "dev-develop"
+    },
     "projet-normandie/user-bundle": {
         "version": "dev-main"
     },
@@ -451,6 +454,18 @@
             "config/routes.yaml"
         ]
     },
+    "symfony/scheduler": {
+        "version": "7.3",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "7.2",
+            "ref": "caea3c928ee9e1b21288fd76aef36f16ea355515"
+        },
+        "files": [
+            "src/Schedule.php"
+        ]
+    },
     "symfony/security-bundle": {
         "version": "7.2",
         "recipe": {
@@ -540,6 +555,12 @@
     },
     "twig/extra-bundle": {
         "version": "v3.21.0"
+    },
+    "video-games-records/core-bundle": {
+        "version": "dev-develop"
+    },
+    "video-games-records/dwh-bundle": {
+        "version": "dev-develop"
     },
     "zenstruck/messenger-monitor-bundle": {
         "version": "0.5",

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a08d5347e17bb47411ac9965205e6b3",
+    "content-hash": "762f24e02aacba4f18b156438fba837f",
     "packages": [
         {
             "name": "a2lix/auto-form-bundle",
@@ -1592,6 +1592,68 @@
             "time": "2025-02-27T21:21:05+00:00"
         },
         {
+            "name": "beberlei/doctrineextensions",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beberlei/DoctrineExtensions.git",
+                "reference": "281f1650641c2f438b0a54d8eaa7ba50ac7e3eb6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beberlei/DoctrineExtensions/zipball/281f1650641c2f438b0a54d8eaa7ba50ac7e3eb6",
+                "reference": "281f1650641c2f438b0a54d8eaa7ba50ac7e3eb6",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/orm": "^2.19 || ^3.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.14 || ^2",
+                "doctrine/coding-standard": "^9.0.2 || ^12.0",
+                "nesbot/carbon": "^2.72 || ^3",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^8.5 || ^9.6",
+                "squizlabs/php_codesniffer": "^3.8",
+                "symfony/cache": "^5.4 || ^6.4 || ^7.0",
+                "symfony/yaml": "^5.4 || ^6.4 || ^7.0",
+                "vimeo/psalm": "^3.18 || ^5.22",
+                "zf1/zend-date": "^1.12",
+                "zf1/zend-registry": "^1.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DoctrineExtensions\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Steve Lacey",
+                    "email": "steve@steve.ly"
+                }
+            ],
+            "description": "A set of extensions to Doctrine 2 that add support for additional query functions available in MySQL, Oracle, PostgreSQL and SQLite.",
+            "keywords": [
+                "database",
+                "doctrine",
+                "orm"
+            ],
+            "support": {
+                "source": "https://github.com/beberlei/DoctrineExtensions/tree/v1.5.0"
+            },
+            "time": "2024-03-03T17:55:15+00:00"
+        },
+        {
             "name": "behat/transliterator",
             "version": "v1.5.0",
             "source": {
@@ -3172,6 +3234,71 @@
                 "source": "https://github.com/doctrine/sql-formatter/tree/1.5.2"
             },
             "time": "2025-01-24T11:45:48+00:00"
+        },
+        {
+            "name": "dragonmantank/cron-expression",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dragonmantank/cron-expression.git",
+                "reference": "8c784d071debd117328803d86b2097615b457500"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/8c784d071debd117328803d86b2097615b457500",
+                "reference": "8c784d071debd117328803d86b2097615b457500",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2|^8.0",
+                "webmozart/assert": "^1.0"
+            },
+            "replace": {
+                "mtdowling/cron-expression": "^1.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.0",
+                "phpunit/phpunit": "^7.0|^8.0|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cron\\": "src/Cron/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Tankersley",
+                    "email": "chris@ctankersley.com",
+                    "homepage": "https://github.com/dragonmantank"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "support": {
+                "issues": "https://github.com/dragonmantank/cron-expression/issues",
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-09T13:47:03+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -5462,7 +5589,7 @@
         },
         {
             "name": "projet-normandie/article-bundle",
-            "version": "dev-main",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/article-bundle.git",
@@ -5502,6 +5629,7 @@
                 "symfony/http-client": "^7.3",
                 "symfony/phpunit-bridge": "^7.3"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -5523,22 +5651,83 @@
             "description": "Normandie ArticleBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/article-bundle/issues",
-                "source": "https://github.com/projet-normandie/article-bundle/tree/main"
+                "source": "https://github.com/projet-normandie/article-bundle/tree/develop"
             },
             "time": "2025-06-07T08:18:09+00:00"
         },
         {
-            "name": "projet-normandie/user-bundle",
-            "version": "dev-main",
+            "name": "projet-normandie/forum-bundle",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/projet-normandie/user-bundle.git",
-                "reference": "0e7676709460e3e5f63d4d70928f7f2caa77965c"
+                "url": "https://github.com/projet-normandie/forum-bundle.git",
+                "reference": "5e1cbcdaa947824bd3705bb19e606dba048c9bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/0e7676709460e3e5f63d4d70928f7f2caa77965c",
-                "reference": "0e7676709460e3e5f63d4d70928f7f2caa77965c",
+                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/5e1cbcdaa947824bd3705bb19e606dba048c9bfe",
+                "reference": "5e1cbcdaa947824bd3705bb19e606dba048c9bfe",
+                "shasum": ""
+            },
+            "require": {
+                "api-platform/doctrine-orm": "^4.0",
+                "api-platform/symfony": "^4.0",
+                "doctrine/orm": "^3.3",
+                "gedmo/doctrine-extensions": "^3.11",
+                "php": "^8.3",
+                "sonata-project/admin-bundle": "^4.0",
+                "sonata-project/doctrine-orm-admin-bundle": "^4.8",
+                "symfony/dependency-injection": "^6.4 | ^7.2",
+                "symfony/event-dispatcher": "^6.4 | ^7.2",
+                "symfony/security-bundle": "^6.4 | ^7.2",
+                "symfony/validator": "^6.4 | ^7.2",
+                "webmozart/assert": "^1.11"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-doctrine": "^1.3",
+                "phpstan/phpstan-symfony": "^1.3",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/phpunit-bridge": "^6.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "ProjetNormandie\\ForumBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benard David",
+                    "email": "magicbart@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Normandie ForumBundle",
+            "support": {
+                "issues": "https://github.com/projet-normandie/forum-bundle/issues",
+                "source": "https://github.com/projet-normandie/forum-bundle/tree/develop"
+            },
+            "time": "2025-07-05T07:33:49+00:00"
+        },
+        {
+            "name": "projet-normandie/user-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/projet-normandie/user-bundle.git",
+                "reference": "d241532dd187d582e82e92c35dc831e62910da93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/d241532dd187d582e82e92c35dc831e62910da93",
+                "reference": "d241532dd187d582e82e92c35dc831e62910da93",
                 "shasum": ""
             },
             "require": {
@@ -5574,6 +5763,7 @@
                 "symfony/test-pack": "^1.1",
                 "symfony/yaml": "^6.4"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "symfony": {
@@ -5600,9 +5790,9 @@
             "description": "Normandie UserBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/user-bundle/issues",
-                "source": "https://github.com/projet-normandie/user-bundle/tree/main"
+                "source": "https://github.com/projet-normandie/user-bundle/tree/develop"
             },
-            "time": "2025-06-07T08:11:17+00:00"
+            "time": "2025-06-07T08:10:38+00:00"
         },
         {
             "name": "psr/cache",
@@ -10857,6 +11047,87 @@
             "time": "2025-04-06T16:01:50+00:00"
         },
         {
+            "name": "symfony/scheduler",
+            "version": "v7.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/scheduler.git",
+                "reference": "5fd65e13fe8f19c1b7a4bf24f6fe981cf40396a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/scheduler/zipball/5fd65e13fe8f19c1b7a4bf24f6fe981cf40396a8",
+                "reference": "5fd65e13fe8f19c1b7a4bf24f6fe981cf40396a8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/clock": "^6.4|^7.0"
+            },
+            "require-dev": {
+                "dragonmantank/cron-expression": "^3.1",
+                "symfony/cache": "^6.4|^7.0",
+                "symfony/console": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/event-dispatcher": "^6.4|^7.0",
+                "symfony/lock": "^6.4|^7.0",
+                "symfony/messenger": "^6.4|^7.0",
+                "symfony/serializer": "^6.4|^7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Scheduler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Rabochiy",
+                    "email": "upyx.00@gmail.com"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides scheduling through Symfony Messenger",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "cron",
+                "schedule",
+                "scheduler"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/scheduler/tree/v7.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-03-05T10:15:41+00:00"
+        },
+        {
             "name": "symfony/security-acl",
             "version": "v3.3.4",
             "source": {
@@ -12837,6 +13108,155 @@
             "time": "2025-05-03T07:21:55+00:00"
         },
         {
+            "name": "video-games-records/core-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/video-games-records/core-bundle.git",
+                "reference": "1e9bba78d203a42c065398fd52e0a6406f2ef894"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/1e9bba78d203a42c065398fd52e0a6406f2ef894",
+                "reference": "1e9bba78d203a42c065398fd52e0a6406f2ef894",
+                "shasum": ""
+            },
+            "require": {
+                "a2lix/translation-form-bundle": "*",
+                "api-platform/doctrine-orm": "^4.0",
+                "api-platform/symfony": "^4.0",
+                "aws/aws-sdk-php-symfony": "~2.0",
+                "beberlei/doctrineextensions": "^1.3",
+                "doctrine/doctrine-bundle": "~2.0",
+                "doctrine/orm": "^3.3",
+                "dragonmantank/cron-expression": "^3.3",
+                "ext-gd": "*",
+                "gedmo/doctrine-extensions": "^3.11",
+                "google/apiclient": "^2.0",
+                "league/flysystem-bundle": "^3.0",
+                "php": "^8.4",
+                "sonata-project/admin-bundle": "^4.0",
+                "sonata-project/doctrine-orm-admin-bundle": "^4.8",
+                "symfony/config": "^6.4 | ^7.2",
+                "symfony/console": "^6.4 | ^7.2",
+                "symfony/dependency-injection": "^6.4 | ^7.2",
+                "symfony/dotenv": "^6.4 | ^7.2",
+                "symfony/flex": "^2",
+                "symfony/framework-bundle": "^6.4 | ^7.2",
+                "symfony/http-kernel": "^6.4 | ^7.2",
+                "symfony/intl": "^6.4 | ^7.2",
+                "symfony/lock": "^6.4 | ^7.2",
+                "symfony/messenger": "^6.4 | ^7.2",
+                "symfony/runtime": "^6.4 | ^7.2",
+                "symfony/scheduler": "^6.4 | ^7.2",
+                "symfony/twig-bundle": "^6.4 | ^7.2",
+                "symfony/validator": "^6.4 | ^7.2",
+                "symfony/yaml": "^6.4 | ^7.2",
+                "webmozart/assert": "*",
+                "yokai/sonata-workflow": "*"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-doctrine": "^2.0",
+                "phpstan/phpstan-symfony": "^2.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/browser-kit": "^6.4 | ^7.2",
+                "symfony/http-client": "^6.4 | ^7.2",
+                "symfony/phpunit-bridge": "^7.0",
+                "symfony/web-profiler-bundle": "^6.4 | ^7.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "VideoGamesRecords\\CoreBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benard David",
+                    "email": "magicbart@gmail.com",
+                    "homepage": "https://www.vgr-magicbart.com/",
+                    "role": "Developper"
+                }
+            ],
+            "description": "VideoGamesRecords CoreBundle",
+            "support": {
+                "issues": "https://github.com/video-games-records/core-bundle/issues",
+                "source": "https://github.com/video-games-records/core-bundle/tree/develop"
+            },
+            "time": "2025-07-05T07:22:21+00:00"
+        },
+        {
+            "name": "video-games-records/dwh-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/video-games-records/dwh-bundle.git",
+                "reference": "b4fcaaf18a4498f06971ef92b38282d4fe37d446"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/video-games-records/dwh-bundle/zipball/b4fcaaf18a4498f06971ef92b38282d4fe37d446",
+                "reference": "b4fcaaf18a4498f06971ef92b38282d4fe37d446",
+                "shasum": ""
+            },
+            "require": {
+                "api-platform/doctrine-orm": "^4.0",
+                "api-platform/symfony": "^4.0",
+                "doctrine/doctrine-bundle": "~2.0",
+                "doctrine/orm": "^3.3",
+                "php": "^8.3",
+                "symfony/config": "^6.4 | ^7.2",
+                "symfony/console": "^6.4 | ^7.2",
+                "symfony/dependency-injection": "^6.4 | ^7.2",
+                "symfony/http-kernel": "^6.4 | ^7.2",
+                "symfony/messenger": "^6.4 | ^7.2",
+                "symfony/scheduler": "^6.4 | ^7.2",
+                "video-games-records/core-bundle": "dev-develop"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-doctrine": "^1.3",
+                "phpstan/phpstan-symfony": "^1.3",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/browser-kit": "^6.4 | ^7.2",
+                "symfony/phpunit-bridge": "^7.0",
+                "symfony/web-profiler-bundle": "^6.4 | ^7.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "VideoGamesRecords\\DwhBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benard David",
+                    "email": "magicbart@gmail.com",
+                    "homepage": "https://www.vgr-magicbart.com/",
+                    "role": "Developper"
+                }
+            ],
+            "description": "VideoGamesRecords DwhBundle",
+            "support": {
+                "issues": "https://github.com/video-games-records/dwh-bundle/issues",
+                "source": "https://github.com/video-games-records/dwh-bundle/tree/develop"
+            },
+            "time": "2025-07-05T07:24:51+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.11.0",
             "source": {
@@ -14177,8 +14597,11 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "projet-normandie/article-bundle": 20,
+        "projet-normandie/forum-bundle": 20,
         "projet-normandie/user-bundle": 20,
-        "sonata-project/translation-bundle": 20
+        "sonata-project/translation-bundle": 20,
+        "video-games-records/core-bundle": 20,
+        "video-games-records/dwh-bundle": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
