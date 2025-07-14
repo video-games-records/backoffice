@@ -1,5 +1,12 @@
 framework:
     messenger:
+        buses:
+            messenger.bus.default:
+                middleware:
+                    - App\Messenger\Middleware\UniquenessMiddleware
+                    - doctrine_transaction
+                    - validation
+                    - router_context
         # Uncomment this (and the failed transport below) to send failed messages to this transport for later handling.
         failure_transport: failed
 
@@ -8,17 +15,74 @@ framework:
             async: '%env(MESSENGER_TRANSPORT_DSN)%'
             failed: 'doctrine://default?queue_name=failed'
             sync: 'sync://'
+            player_chart_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_chart_rank
+                retry_strategy:
+                    max_retries: 0
+            player_group_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_group_rank
+                retry_strategy:
+                    max_retries: 0
+            player_game_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_game_rank
+                retry_strategy:
+                    max_retries: 0
+            player_serie_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_serie_rank
+                retry_strategy:
+                    max_retries: 0
+            player_platform_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_platform_rank
+                retry_strategy:
+                    max_retries: 0
+            player_data:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_data
+                retry_strategy:
+                    max_retries: 0
+            player_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: player_rank
+                retry_strategy:
+                    max_retries: 0
+
 
         routing:
             Symfony\Component\Mailer\Messenger\SendEmailMessage: async
             #Symfony\Component\Notifier\Message\ChatMessage: async
             #Symfony\Component\Notifier\Message\SmsMessage: async
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerChartRank: player_chart_rank
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGroupRank: player_group_rank
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGameRank: player_game_rank
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerSerieRank: player_serie_rank
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerPlatformRank: player_platform_rank
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerData: player_data
+            VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerRank: player_rank
 
 when@dev:
     framework:
         messenger:
             routing:
                 Symfony\Component\Mailer\Messenger\SendEmailMessage: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerChartRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGroupRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGameRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerSerieRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerPlatformRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerData: sync
+                #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerRank: sync
 
 
 when@test:

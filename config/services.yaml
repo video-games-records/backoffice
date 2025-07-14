@@ -36,4 +36,11 @@ services:
         arguments:
             $loginLimiter: '@limiter.login'
 
+    App\Messenger\Middleware\UniquenessMiddleware:
+        arguments:
+            $cache: '@cache.app'
+            $ttl: 3600
+        tags:
+            - { name: messenger.middleware }
+
 

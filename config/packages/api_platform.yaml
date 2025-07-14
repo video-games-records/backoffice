@@ -7,8 +7,8 @@ api_platform:
         enabled: true
         graphiql:
             enabled: true  # GraphiQL interface for development
-        graphql_playground:
-            enabled: true  # GraphQL Playground for development
+        #graphql_playground:
+        #    enabled: true  # GraphQL Playground for development
 
         # Cursor-based pagination (Relay style)
         default_ide: 'graphiql'
