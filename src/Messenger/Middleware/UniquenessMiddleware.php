@@ -40,8 +40,19 @@ class UniquenessMiddleware implements MiddlewareInterface
         $cacheItem->expiresAfter($this->ttl);
         $this->cache->save($cacheItem);
 
-        // Continue le traitement
-        return $stack->next()->handle($envelope, $stack);
+        try {
+            // Continue le traitement
+            $result = $stack->next()->handle($envelope, $stack);
+
+            // Supprime l'entrée du cache une fois le traitement terminé
+            $this->cache->deleteItem($cacheKey);
+
+            return $result;
+        } catch (\Throwable $e) {
+            // En cas d'erreur, supprime aussi l'entrée du cache
+            $this->cache->deleteItem($cacheKey);
+            throw $e;
+        }
     }
 
     private function generateMessageHash($message): string

@@ -6,6 +6,7 @@ namespace App\EventSubscriber\Notify\PlayerChart;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\PlayerChartUpdated;
 
 final class NotifyPlayerChartUpdatedSubscriber extends AbstractNotifySubscriberInterface
@@ -29,16 +30,20 @@ final class NotifyPlayerChartUpdatedSubscriber extends AbstractNotifySubscriberI
             ->setType('DEFAULT');
 
         // Send MP
-        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($playerChart->getPlayer()->getUserId());
-        $url = '/' . $recipient->getLocale() . '/' . $playerChart->getUrl();
+        /** @var User $recipient */
+        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
+            ->find($playerChart->getPlayer()->getUserId());
+        $url = '/' . $recipient->getLanguage() . '/' . $playerChart->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('playerChart.updated.object', array(), null, $recipient->getLocale()))
+            ->setObject(
+                $this->translator->trans('playerChart.updated.object', array(), null, $recipient->getLanguage())
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('playerChart.updated.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('playerChart.updated.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $playerChart->getChart()->getCompleteName($recipient->getLocale())
+                    $playerChart->getChart()->getCompleteName($recipient->getLanguage())
                 )
             )
             ->setRecipient($recipient)
