@@ -4,23 +4,22 @@ namespace App\EventSubscriber\Notify\ProofRequest;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
-use VideoGamesRecords\CoreBundle\Event\ProofRequestEvent;
-use VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreEvents;
+use VideoGamesRecords\CoreBundle\Event\ProofRequestAccepted;
 
 final class NotifyProofRequestAcceptedSubscriber extends AbstractNotifySubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            VideoGamesRecordsCoreEvents::PROOF_REQUEST_ACCEPTED => 'sendMessage',
+            ProofRequestAccepted::class => 'sendMessage',
         ];
     }
 
     /**
-     * @param ProofRequestEvent $event
+     * @param ProofRequestAccepted $event
      * @throws ORMException
      */
-    public function sendMessage(ProofRequestEvent $event): void
+    public function sendMessage(ProofRequestAccepted $event): void
     {
         $proofRequest = $event->getProofRequest();
         $this->messageBuilder

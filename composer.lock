@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "762f24e02aacba4f18b156438fba837f",
+    "content-hash": "fd20eec28951fc9b27c6716071ca8122",
     "packages": [
         {
             "name": "a2lix/auto-form-bundle",
@@ -1439,16 +1439,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.349.3",
+            "version": "3.350.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b2d4718786398f47626add9c29840fc416175ef2"
+                "reference": "ec8ab6bc46a0a0c07e2c81fbcc8c9ec8cb0ab1b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2d4718786398f47626add9c29840fc416175ef2",
-                "reference": "b2d4718786398f47626add9c29840fc416175ef2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec8ab6bc46a0a0c07e2c81fbcc8c9ec8cb0ab1b7",
+                "reference": "ec8ab6bc46a0a0c07e2c81fbcc8c9ec8cb0ab1b7",
                 "shasum": ""
             },
             "require": {
@@ -1530,9 +1530,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.349.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.350.1"
             },
-            "time": "2025-07-09T18:10:17+00:00"
+            "time": "2025-07-16T00:32:17+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -5625,6 +5625,65 @@
                 "source": "https://github.com/projet-normandie/forum-bundle/tree/develop"
             },
             "time": "2025-07-05T07:33:49+00:00"
+        },
+        {
+            "name": "projet-normandie/message-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/projet-normandie/message-bundle.git",
+                "reference": "0c43bb871a908d8cc5aebb5d3115b0e236ce8a29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/projet-normandie/message-bundle/zipball/0c43bb871a908d8cc5aebb5d3115b0e236ce8a29",
+                "reference": "0c43bb871a908d8cc5aebb5d3115b0e236ce8a29",
+                "shasum": ""
+            },
+            "require": {
+                "api-platform/doctrine-orm": "^4.0",
+                "api-platform/symfony": "^4.0",
+                "doctrine/orm": "^3.3",
+                "gedmo/doctrine-extensions": "^3.11",
+                "php": "^8.3",
+                "sonata-project/admin-bundle": "^4.0",
+                "sonata-project/doctrine-orm-admin-bundle": "^4.8",
+                "symfony/console": "^6.4 | ^7.2",
+                "symfony/dependency-injection": "^6.4 | ^7.2",
+                "symfony/event-dispatcher": "^6.4 | ^7.2",
+                "symfony/security-bundle": "^6.4 | ^7.2"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-doctrine": "^2.0",
+                "phpstan/phpstan-symfony": "^2.0",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/phpunit-bridge": "^6.2 | ^7.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "ProjetNormandie\\MessageBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benard David",
+                    "email": "magicbart@gmail.com"
+                }
+            ],
+            "description": "Normandie Message bundle",
+            "support": {
+                "issues": "https://github.com/projet-normandie/message-bundle/issues",
+                "source": "https://github.com/projet-normandie/message-bundle/tree/develop"
+            },
+            "time": "2025-07-16T12:57:22+00:00"
         },
         {
             "name": "projet-normandie/user-bundle",
@@ -13386,12 +13445,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "e9f61d4db749a7955bec7af40a51e77703acfc94"
+                "reference": "a008f3d019bd5746b855b6d1876031206042925c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/e9f61d4db749a7955bec7af40a51e77703acfc94",
-                "reference": "e9f61d4db749a7955bec7af40a51e77703acfc94",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/a008f3d019bd5746b855b6d1876031206042925c",
+                "reference": "a008f3d019bd5746b855b6d1876031206042925c",
                 "shasum": ""
             },
             "require": {
@@ -13463,7 +13522,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/develop"
             },
-            "time": "2025-07-14T18:15:29+00:00"
+            "time": "2025-07-16T12:50:19+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
@@ -14874,6 +14933,7 @@
     "stability-flags": {
         "projet-normandie/article-bundle": 20,
         "projet-normandie/forum-bundle": 20,
+        "projet-normandie/message-bundle": 20,
         "projet-normandie/user-bundle": 20,
         "sonata-project/translation-bundle": 20,
         "video-games-records/core-bundle": 20,

@@ -6,23 +6,22 @@ namespace App\EventSubscriber\Notify\Badge;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
-use VideoGamesRecords\CoreBundle\Event\TeamBadgeEvent;
-use VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreEvents;
+use VideoGamesRecords\CoreBundle\Event\TeamBadgeLost;
 
 final class NotifyTeamBadgeLostSubscriber extends AbstractNotifySubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            VideoGamesRecordsCoreEvents::TEAM_BADGE_LOST => 'notify',
+            TeamBadgeLost::class => 'notify',
         ];
     }
 
     /**
-     * @param TeamBadgeEvent $event
+     * @param TeamBadgeLost $event
      * @throws ORMException
      */
-    public function notify(TeamBadgeEvent $event): void
+    public function notify(TeamBadgeLost $event): void
     {
         $teamBadge = $event->getTeamBadge();
         $game = $teamBadge->getBadge()->getGame();

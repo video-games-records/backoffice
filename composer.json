@@ -28,6 +28,7 @@
         "phpstan/phpdoc-parser": "^2.1",
         "projet-normandie/article-bundle": "dev-develop",
         "projet-normandie/forum-bundle": "dev-develop",
+        "projet-normandie/message-bundle": "dev-develop",
         "projet-normandie/user-bundle": "dev-develop",
         "sonata-project/admin-bundle": "^4.37",
         "sonata-project/doctrine-orm-admin-bundle": "^4.18",

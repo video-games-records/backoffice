@@ -5,28 +5,24 @@ declare(strict_types=1);
 namespace App\EventSubscriber\Notify\Proof;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
-use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\Exception\ORMException;
 use ProjetNormandie\MessageBundle\Builder\MessageBuilder;
-use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Contracts\Translation\TranslatorInterface;
-use VideoGamesRecords\CoreBundle\Event\ProofEvent;
-use VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreEvents;
+use VideoGamesRecords\CoreBundle\Event\ProofRefused;
 
 final class NotifyProofRefusedSubscriber extends AbstractNotifySubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            VideoGamesRecordsCoreEvents::PROOF_REFUSED => 'sendMessage',
+            ProofRefused::class => 'sendMessage',
         ];
     }
 
     /**
-     * @param ProofEvent $event
+     * @param ProofRefused $event
      * @throws ORMException
      */
-    public function sendMessage(ProofEvent $event): void
+    public function sendMessage(ProofRefused $event): void
     {
         $proof = $event->getProof();
         $this->messageBuilder
