@@ -6,6 +6,7 @@ namespace App\EventSubscriber\Notify\Proof;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\ProofAccepted;
 
 final class NotifyProofAcceptedSubscriber extends AbstractNotifySubscriberInterface
@@ -28,16 +29,18 @@ final class NotifyProofAcceptedSubscriber extends AbstractNotifySubscriberInterf
             ->setSender($this->getDefaultSender())
             ->setType('VGR_PROOF_ACCEPTED');
 
-        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($proof->getPlayerChart()->getPlayer()->getUserId());
-        $url = '/' . $recipient->getLocale() . '/' . $proof->getPlayerChart()->getUrl();
+        /** @var User $recipient */
+        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
+            ->find($proof->getPlayerChart()->getPlayer()->getUserId());
+        $url = '/' . $recipient->getLanguage() . '/' . $proof->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.proof.accept.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('proof.proof.accept.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.proof.accept.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('proof.proof.accept.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLocale()),
+                    $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
                     $proof->getResponse()
                 )
             )

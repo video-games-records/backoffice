@@ -4,6 +4,7 @@ namespace App\EventSubscriber\Notify\ProofRequest;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\ProofRequestAccepted;
 
 final class NotifyProofRequestAcceptedSubscriber extends AbstractNotifySubscriberInterface
@@ -27,31 +28,35 @@ final class NotifyProofRequestAcceptedSubscriber extends AbstractNotifySubscribe
             ->setType('VGR_PROOF_REQUEST_ACCEPTED');
 
         // Send MP (1)
-        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($proofRequest->getPlayerChart()->getPlayer()->getUserId());
-        $url = '/' . $recipient->getLocale() . '/' . $proofRequest->getPlayerChart()->getUrl();
+        /** @var User $recipient */
+        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
+            ->find($proofRequest->getPlayerChart()->getPlayer()->getUserId());
+        $url = '/' . $recipient->getLanguage() . '/' . $proofRequest->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.request.confirm.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('proof.request.confirm.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.request.confirm.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('proof.request.confirm.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLocale())
+                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage())
                 )
             )
             ->setRecipient($recipient)
             ->send();
 
         // Send MP (2)
-        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($proofRequest->getPlayerRequesting()->getUserId());
+        /** @var User $recipient */
+        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
+            ->find($proofRequest->getPlayerRequesting()->getUserId());
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.request.accept.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('proof.request.accept.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.request.accept.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('proof.request.accept.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLocale()),
+                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
                     $proofRequest->getPlayerChart()->getPlayer()->getPseudo(),
                     $proofRequest->getResponse()
                 )

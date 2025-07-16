@@ -4,6 +4,7 @@ namespace App\EventSubscriber\Notify\ProofRequest;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\ProofRequestRefused;
 
 final class NotifyProofRequestRefusedSubscriber extends AbstractNotifySubscriberInterface
@@ -26,16 +27,18 @@ final class NotifyProofRequestRefusedSubscriber extends AbstractNotifySubscriber
             ->setSender($this->getDefaultSender())
             ->setType('VGR_PROOF_REQUEST_REFUSED');
 
-        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($proofRequest->getPlayerRequesting()->getUserId());
-        $url = '/' . $recipient->getLocale() . '/' . $proofRequest->getPlayerChart()->getUrl();
+        /** @var User $recipient */
+        $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
+            ->find($proofRequest->getPlayerRequesting()->getUserId());
+        $url = '/' . $recipient->getLanguage() . '/' . $proofRequest->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.request.refuse.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('proof.request.refuse.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.request.refuse.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('proof.request.refuse.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLocale()),
+                    $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
                     $proofRequest->getPlayerChart()->getPlayer()->getPseudo(),
                     $proofRequest->getResponse()
                 )

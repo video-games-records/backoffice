@@ -7,6 +7,7 @@ namespace App\EventSubscriber\Notify\Proof;
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
 use ProjetNormandie\MessageBundle\Builder\MessageBuilder;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\ProofRefused;
 
 final class NotifyProofRefusedSubscriber extends AbstractNotifySubscriberInterface
@@ -29,17 +30,18 @@ final class NotifyProofRefusedSubscriber extends AbstractNotifySubscriberInterfa
             ->setSender($this->getDefaultSender())
             ->setType('VGR_PROOF_REFUSED');
 
+        /** @var User $recipient */
         $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
             ->find($proof->getPlayer()->getUserId());
-        $url = '/' . $recipient->getLocale() . '/' . $proof->getPlayerChart()->getUrl();
+        $url = '/' . $recipient->getLanguage() . '/' . $proof->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.proof.refuse.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('proof.proof.refuse.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.proof.refuse.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('proof.proof.refuse.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
-                    $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLocale()),
+                    $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
                     $proof->getResponse()
                 )
             )
