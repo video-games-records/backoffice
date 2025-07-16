@@ -57,12 +57,49 @@ framework:
                     queue_name: player_rank
                 retry_strategy:
                     max_retries: 0
+            team_chart_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_chart_rank
+                retry_strategy:
+                    max_retries: 0
+            team_group_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_group_rank
+                retry_strategy:
+                    max_retries: 0
+            team_game_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_game_rank
+                retry_strategy:
+                    max_retries: 0
+            team_serie_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_serie_rank
+                retry_strategy:
+                    max_retries: 0
+            team_data:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_data
+                retry_strategy:
+                    max_retries: 0
+            team_rank:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                options:
+                    queue_name: team_rank
+                retry_strategy:
+                    max_retries: 0
 
 
         routing:
             Symfony\Component\Mailer\Messenger\SendEmailMessage: async
             #Symfony\Component\Notifier\Message\ChatMessage: async
             #Symfony\Component\Notifier\Message\SmsMessage: async
+            #Player Ranking
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerChartRank: player_chart_rank
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGroupRank: player_group_rank
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerGameRank: player_game_rank
@@ -70,6 +107,13 @@ framework:
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerPlatformRank: player_platform_rank
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerData: player_data
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerRank: player_rank
+            #Team Ranking
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamChartRank: team_chart_rank
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamGroupRank: team_group_rank
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamGameRank: team_game_rank
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamSerieRank: team_serie_rank
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamData: team_data
+            VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamRank: team_rank
 
 when@dev:
     framework:
@@ -83,6 +127,12 @@ when@dev:
                 #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerPlatformRank: sync
                 #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerData: sync
                 #VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamChartRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamGroupRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamGameRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamSerieRank: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamData: sync
+                #VideoGamesRecords\CoreBundle\Message\Team\UpdateTeamRank: sync
 
 
 when@test:

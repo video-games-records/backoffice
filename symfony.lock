@@ -197,6 +197,9 @@
     "projet-normandie/forum-bundle": {
         "version": "dev-develop"
     },
+    "projet-normandie/message-bundle": {
+        "version": "dev-develop"
+    },
     "projet-normandie/user-bundle": {
         "version": "dev-main"
     },
