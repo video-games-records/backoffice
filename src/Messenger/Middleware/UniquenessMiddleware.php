@@ -5,7 +5,8 @@ namespace App\Messenger\Middleware;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\Middleware\MiddlewareInterface;
 use Symfony\Component\Messenger\Middleware\StackInterface;
-use Symfony\Component\Messenger\Stamp\TransportNamesStamp;
+use Symfony\Component\Messenger\Stamp\ConsumedByWorkerStamp;
+use Symfony\Component\Messenger\Stamp\SentStamp;
 use Psr\Cache\CacheItemPoolInterface;
 
 class UniquenessMiddleware implements MiddlewareInterface
@@ -22,42 +23,55 @@ class UniquenessMiddleware implements MiddlewareInterface
     public function handle(Envelope $envelope, StackInterface $stack): Envelope
     {
         $message = $envelope->getMessage();
-
-        // Génère une clé unique basée sur le message
         $messageHash = $this->generateMessageHash($message);
         $cacheKey = 'messenger_message_' . $messageHash;
 
-        // Vérifie si le message existe déjà
-        $cacheItem = $this->cache->getItem($cacheKey);
+        // Vérifier l'unicité seulement lors de l'envoi
+        if (!$envelope->all(SentStamp::class) && !$envelope->all(ConsumedByWorkerStamp::class)) {
+            $cacheItem = $this->cache->getItem($cacheKey);
 
-        if ($cacheItem->isHit()) {
-            // Message déjà en queue, on ne l'ajoute pas
-            return $envelope;
+            if ($cacheItem->isHit()) {
+                // Message déjà en queue, on ne l'ajoute pas
+                return $envelope;
+            }
+
+            // Marquer le message comme en cours de traitement
+            $cacheItem->set(true);
+            $cacheItem->expiresAfter($this->ttl);
+            $this->cache->save($cacheItem);
         }
 
-        // Marque le message comme en cours de traitement
-        $cacheItem->set(true);
-        $cacheItem->expiresAfter($this->ttl);
-        $this->cache->save($cacheItem);
-
         try {
-            // Continue le traitement
+            // Continuer le traitement
             $result = $stack->next()->handle($envelope, $stack);
 
-            // Supprime l'entrée du cache une fois le traitement terminé
-            $this->cache->deleteItem($cacheKey);
+            // Si le message a été consommé avec succès, nettoyer le cache
+            if ($envelope->all(ConsumedByWorkerStamp::class)) {
+                $this->cache->deleteItem($cacheKey);
+            }
 
             return $result;
         } catch (\Throwable $e) {
-            // En cas d'erreur, supprime aussi l'entrée du cache
-            $this->cache->deleteItem($cacheKey);
+            // En cas d'erreur, garder le cache pour éviter les re-tentatives immédiates
+            // mais avec un TTL plus court
+            if ($envelope->all(ConsumedByWorkerStamp::class)) {
+                $cacheItem = $this->cache->getItem($cacheKey);
+                $cacheItem->set(true);
+                $cacheItem->expiresAfter(60); // 1 minute au lieu du TTL normal
+                $this->cache->save($cacheItem);
+            }
+
             throw $e;
         }
     }
 
     private function generateMessageHash($message): string
     {
-        // Personnalisez cette méthode selon vos besoins
+        // Pour votre cas spécifique : entité + id
+        if (method_exists($message, 'getEntityClass') && method_exists($message, 'getEntityId')) {
+            return md5($message->getEntityClass() . '_' . $message->getEntityId());
+        }
+
         if (method_exists($message, 'getUniqueIdentifier')) {
             return md5($message->getUniqueIdentifier());
         }
