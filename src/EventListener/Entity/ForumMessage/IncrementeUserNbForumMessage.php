@@ -16,6 +16,6 @@ readonly class IncrementeUserNbForumMessage
     {
         /** @var User $user */
         $user = $message->getUser();
-        $user->setExtraData('nbConnexion', $user->getExtraData('nbConnexion') + 1);
+        $user->setExtraData('nbForumMessage', $user->getExtraData('nbForumMessage') + 1);
     }
 }
