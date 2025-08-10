@@ -1439,16 +1439,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.352.2",
+            "version": "3.352.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "695daa607b6770e426613453f04f4a82f1555887"
+                "reference": "e226dcc96c0a1165d9c8248ec637d1006b883609"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/695daa607b6770e426613453f04f4a82f1555887",
-                "reference": "695daa607b6770e426613453f04f4a82f1555887",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e226dcc96c0a1165d9c8248ec637d1006b883609",
+                "reference": "e226dcc96c0a1165d9c8248ec637d1006b883609",
                 "shasum": ""
             },
             "require": {
@@ -1530,9 +1530,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.352.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.352.5"
             },
-            "time": "2025-08-05T18:15:51+00:00"
+            "time": "2025-08-08T18:09:38+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -2906,16 +2906,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "3.5.1",
+            "version": "3.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "64444dcfd511089d526cd2c7f74b9d7ed583bdfc"
+                "reference": "5a541b8b3a327ab1ea5f93b1615b4ff67a34e109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/64444dcfd511089d526cd2c7f74b9d7ed583bdfc",
-                "reference": "64444dcfd511089d526cd2c7f74b9d7ed583bdfc",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/5a541b8b3a327ab1ea5f93b1615b4ff67a34e109",
+                "reference": "5a541b8b3a327ab1ea5f93b1615b4ff67a34e109",
                 "shasum": ""
             },
             "require": {
@@ -2990,9 +2990,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/orm/issues",
-                "source": "https://github.com/doctrine/orm/tree/3.5.1"
+                "source": "https://github.com/doctrine/orm/tree/3.5.2"
             },
-            "time": "2025-08-05T06:05:51+00:00"
+            "time": "2025-08-08T17:00:40+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -5572,12 +5572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/forum-bundle.git",
-                "reference": "add556c1094b155243155632f263336d9c8a5162"
+                "reference": "8cc68ecdff490817c3f838deca58b13ceb5d7cfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/add556c1094b155243155632f263336d9c8a5162",
-                "reference": "add556c1094b155243155632f263336d9c8a5162",
+                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/8cc68ecdff490817c3f838deca58b13ceb5d7cfe",
+                "reference": "8cc68ecdff490817c3f838deca58b13ceb5d7cfe",
                 "shasum": ""
             },
             "require": {
@@ -5625,7 +5625,7 @@
                 "issues": "https://github.com/projet-normandie/forum-bundle/issues",
                 "source": "https://github.com/projet-normandie/forum-bundle/tree/develop"
             },
-            "time": "2025-08-06T14:05:53+00:00"
+            "time": "2025-08-10T13:37:33+00:00"
         },
         {
             "name": "projet-normandie/message-bundle",
@@ -6276,16 +6276,16 @@
         },
         {
             "name": "sonata-project/admin-bundle",
-            "version": "4.37.4",
+            "version": "4.37.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "65886ef1eb3adbb0049d24eeeb223340ebe069ae"
+                "reference": "e122ff42f03318f9671d6dd9f843efa289fb824d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/65886ef1eb3adbb0049d24eeeb223340ebe069ae",
-                "reference": "65886ef1eb3adbb0049d24eeeb223340ebe069ae",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/e122ff42f03318f9671d6dd9f843efa289fb824d",
+                "reference": "e122ff42f03318f9671d6dd9f843efa289fb824d",
                 "shasum": ""
             },
             "require": {
@@ -6391,7 +6391,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sonata-project/SonataAdminBundle/issues",
-                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.37.4"
+                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.37.5"
             },
             "funding": [
                 {
@@ -6411,7 +6411,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-07-03T18:17:57+00:00"
+            "time": "2025-08-08T09:32:23+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -12039,32 +12039,32 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.28.2",
+            "version": "v2.29.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "4ebef4b41e2524b7b797a103144256e5f7b39226"
+                "reference": "fedf396824a29f9c3bcf475b148aaf2db79521c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/4ebef4b41e2524b7b797a103144256e5f7b39226",
-                "reference": "4ebef4b41e2524b7b797a103144256e5f7b39226",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/fedf396824a29f9c3bcf475b148aaf2db79521c9",
+                "reference": "fedf396824a29f9c3bcf475b148aaf2db79521c9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
+                "symfony/config": "^5.4|^6.0|^7.0|^8.0",
+                "symfony/dependency-injection": "^5.4|^6.0|^7.0|^8.0",
                 "symfony/deprecation-contracts": "^2.0|^3.0",
-                "symfony/finder": "^5.4|^6.0|^7.0",
-                "symfony/http-kernel": "^5.4|^6.0|^7.0",
+                "symfony/finder": "^5.4|^6.0|^7.0|^8.0",
+                "symfony/http-kernel": "^5.4|^6.0|^7.0|^8.0",
                 "twig/twig": "^2.15.3|^3.8"
             },
             "require-dev": {
-                "symfony/asset-mapper": "^6.3|^7.0",
-                "symfony/framework-bundle": "^5.4|^6.0|^7.0",
-                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0",
-                "symfony/twig-bundle": "^5.4|^6.0|^7.0",
+                "symfony/asset-mapper": "^6.3|^7.0|^8.0",
+                "symfony/framework-bundle": "^5.4|^6.0|^7.0|^8.0",
+                "symfony/phpunit-bridge": "^5.4|^6.0|^7.0|^8.0",
+                "symfony/twig-bundle": "^5.4|^6.0|^7.0|^8.0",
                 "zenstruck/browser": "^1.4"
             },
             "type": "symfony-bundle",
@@ -12088,7 +12088,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.28.2"
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.29.1"
             },
             "funding": [
                 {
@@ -12108,7 +12108,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-29T15:18:27+00:00"
+            "time": "2025-08-08T11:38:41+00:00"
         },
         {
             "name": "symfony/stopwatch",
