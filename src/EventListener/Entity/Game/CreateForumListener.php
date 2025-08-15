@@ -13,7 +13,7 @@ use VideoGamesRecords\CoreBundle\Entity\Game;
 #[AsEntityListener(event: Events::prePersist, method: 'setForum', entity: Game::class)]
 readonly class CreateForumListener
 {
-    public const FORUM_ID = 10953;
+    public const CATEGORY_ID = 8;
 
     public function __construct(
         private EntityManagerInterface $em
@@ -22,13 +22,13 @@ readonly class CreateForumListener
 
     public function setForum(Game $game): void
     {
-        $parent = $this->em->getRepository('ProjetNormandie\ForumBundle\Entity\Forum')
-            ->findOneBy(['id' => self::FORUM_ID]);
+        $category = $this->em->getRepository('ProjetNormandie\ForumBundle\Entity\Category')
+            ->findOneBy(['id' => self::CATEGORY_ID]);
 
         $forum = new Forum();
         $forum->setLibForum($game->getLibGameEn());
         $forum->setLibForumFr($game->getLibGameFr());
-        $forum->setParent($parent);
+        $forum->setCategory($category);
 
         $game->setForum($forum);
     }
