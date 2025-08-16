@@ -35,10 +35,10 @@ final class NotifyProofRefusedSubscriber extends AbstractNotifySubscriberInterfa
             ->find($proof->getPlayer()->getUserId());
         $url = '/' . $recipient->getLanguage() . '/' . $proof->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.proof.refuse.object', array(), null, $recipient->getLanguage()))
+            ->setObject($this->translator->trans('proof.notification.refuse.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.proof.refuse.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans('proof.notification.refuse.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
                     $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
