@@ -13,7 +13,7 @@ use VideoGamesRecords\CoreBundle\Scheduler\Message\AddGameOfDay;
 use VideoGamesRecords\CoreBundle\Scheduler\Message\DesactivateScore;
 use VideoGamesRecords\CoreBundle\Scheduler\Message\PurgeLostPosition;
 use VideoGamesRecords\CoreBundle\Scheduler\Message\UpdatePlayerBadge;
-use VideoGamesRecords\CoreBundle\Scheduler\Message\DailyRankingMessage;
+use VideoGamesRecords\CoreBundle\Scheduler\Message\DailyRanking;
 use VideoGamesRecords\CoreBundle\Scheduler\Message\UpdateYoutubeData;
 use VideoGamesRecords\DwhBundle\Scheduler\Message\UpdateTable;
 
@@ -32,7 +32,7 @@ class Scheduler implements ScheduleProviderInterface
             ->add(RecurringMessage::cron('5 0 * * *', new RedispatchMessage(new UpdateTable('team'), 'async')))
 
             // VGR-CORE
-            ->add(RecurringMessage::cron('00 8 * * *', new DailyRankingMessage()))
+            ->add(RecurringMessage::cron('00 8 * * *', new DailyRanking()))
             ->add(RecurringMessage::cron('00 8 * * 1', new UpdateYoutubeData()))
             ->add(RecurringMessage::cron('00 22 * * * ', new UpdatePlayerBadge()))
             ->add(RecurringMessage::cron('00 6,12,18 * * * ', new PurgeLostPosition()))
