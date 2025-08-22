@@ -13648,12 +13648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "5e7d8abc896d6f103c71e189fa77f4a7b93dd326"
+                "reference": "2a119afdee3f8dcb08153a7eee6bf6a23f0ba685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/5e7d8abc896d6f103c71e189fa77f4a7b93dd326",
-                "reference": "5e7d8abc896d6f103c71e189fa77f4a7b93dd326",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/2a119afdee3f8dcb08153a7eee6bf6a23f0ba685",
+                "reference": "2a119afdee3f8dcb08153a7eee6bf6a23f0ba685",
                 "shasum": ""
             },
             "require": {
@@ -13725,7 +13725,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/develop"
             },
-            "time": "2025-08-22T08:40:12+00:00"
+            "time": "2025-08-22T09:58:28+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
