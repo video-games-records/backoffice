@@ -3681,7 +3681,7 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.408.0",
+            "version": "v0.409.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
@@ -3719,7 +3719,7 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.408.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.409.0"
             },
             "time": "2025-06-04T17:28:44+00:00"
         },
@@ -3786,22 +3786,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.9.3",
+            "version": "7.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77"
+                "reference": "b51ac707cfa420b7bfd4e4d5e510ba8008e822b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
-                "reference": "7b2f29fe81dc4da0ca0ea7d42107a0845946ea77",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
+                "reference": "b51ac707cfa420b7bfd4e4d5e510ba8008e822b4",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.5.3 || ^2.0.3",
-                "guzzlehttp/psr7": "^2.7.0",
+                "guzzlehttp/promises": "^2.3",
+                "guzzlehttp/psr7": "^2.8",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0",
                 "symfony/deprecation-contracts": "^2.2 || ^3.0"
@@ -3892,7 +3892,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.9.3"
+                "source": "https://github.com/guzzle/guzzle/tree/7.10.0"
             },
             "funding": [
                 {
@@ -3908,7 +3908,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-27T13:37:11+00:00"
+            "time": "2025-08-23T22:36:01+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3995,16 +3995,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
+                "reference": "21dc724a0583619cd1652f673303492272778051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
+                "reference": "21dc724a0583619cd1652f673303492272778051",
                 "shasum": ""
             },
             "require": {
@@ -4020,7 +4020,7 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -4091,7 +4091,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
             },
             "funding": [
                 {
@@ -4107,7 +4107,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-27T12:30:47+00:00"
+            "time": "2025-08-23T21:21:41+00:00"
         },
         {
             "name": "knplabs/knp-menu",
@@ -5691,12 +5691,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/user-bundle.git",
-                "reference": "0fca1a7455bb29284d247753e3bf0236b4153667"
+                "reference": "bf287179be722d6bccacdbafc3bfaaaab50cf859"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/0fca1a7455bb29284d247753e3bf0236b4153667",
-                "reference": "0fca1a7455bb29284d247753e3bf0236b4153667",
+                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/bf287179be722d6bccacdbafc3bfaaaab50cf859",
+                "reference": "bf287179be722d6bccacdbafc3bfaaaab50cf859",
                 "shasum": ""
             },
             "require": {
@@ -5761,7 +5761,7 @@
                 "issues": "https://github.com/projet-normandie/user-bundle/issues",
                 "source": "https://github.com/projet-normandie/user-bundle/tree/develop"
             },
-            "time": "2025-08-06T14:16:25+00:00"
+            "time": "2025-08-25T17:59:25+00:00"
         },
         {
             "name": "psr/cache",
@@ -6275,16 +6275,16 @@
         },
         {
             "name": "sonata-project/admin-bundle",
-            "version": "4.37.5",
+            "version": "4.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "e122ff42f03318f9671d6dd9f843efa289fb824d"
+                "reference": "4e1536bf44778647735c3641b4086d010491ec69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/e122ff42f03318f9671d6dd9f843efa289fb824d",
-                "reference": "e122ff42f03318f9671d6dd9f843efa289fb824d",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/4e1536bf44778647735c3641b4086d010491ec69",
+                "reference": "4e1536bf44778647735c3641b4086d010491ec69",
                 "shasum": ""
             },
             "require": {
@@ -6390,7 +6390,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sonata-project/SonataAdminBundle/issues",
-                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.37.5"
+                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.38.0"
             },
             "funding": [
                 {
@@ -6410,7 +6410,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-08T09:32:23+00:00"
+            "time": "2025-08-24T17:11:01+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -13648,12 +13648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "f973b78698e10269689627afecd75196de50d844"
+                "reference": "c43f08de9a7df66d4102d082c09f11e31291ece0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/f973b78698e10269689627afecd75196de50d844",
-                "reference": "f973b78698e10269689627afecd75196de50d844",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/c43f08de9a7df66d4102d082c09f11e31291ece0",
+                "reference": "c43f08de9a7df66d4102d082c09f11e31291ece0",
                 "shasum": ""
             },
             "require": {
@@ -13725,7 +13725,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/develop"
             },
-            "time": "2025-08-23T11:38:18+00:00"
+            "time": "2025-08-25T17:35:43+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
