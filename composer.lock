@@ -1439,16 +1439,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.3",
+            "version": "3.356.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9c61b26408664c76d51101381bb64feda9bcfe2e"
+                "reference": "079d1936bef94cb7d76113b62e993f2996db6e24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9c61b26408664c76d51101381bb64feda9bcfe2e",
-                "reference": "9c61b26408664c76d51101381bb64feda9bcfe2e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/079d1936bef94cb7d76113b62e993f2996db6e24",
+                "reference": "079d1936bef94cb7d76113b62e993f2996db6e24",
                 "shasum": ""
             },
             "require": {
@@ -1530,9 +1530,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.6"
             },
-            "time": "2025-08-22T18:13:45+00:00"
+            "time": "2025-08-27T18:06:10+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -1705,16 +1705,16 @@
         },
         {
             "name": "damienharper/auditor",
-            "version": "3.3.3",
+            "version": "3.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DamienHarper/auditor.git",
-                "reference": "7ef7125a0aef1436ad545c8e6c7ab3672320e76b"
+                "reference": "0c95b5c12d3e1d62ef4f206581e9eb22c04763e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DamienHarper/auditor/zipball/7ef7125a0aef1436ad545c8e6c7ab3672320e76b",
-                "reference": "7ef7125a0aef1436ad545c8e6c7ab3672320e76b",
+                "url": "https://api.github.com/repos/DamienHarper/auditor/zipball/0c95b5c12d3e1d62ef4f206581e9eb22c04763e9",
+                "reference": "0c95b5c12d3e1d62ef4f206581e9eb22c04763e9",
                 "shasum": ""
             },
             "require": {
@@ -1768,9 +1768,9 @@
             ],
             "support": {
                 "issues": "https://github.com/DamienHarper/auditor/issues",
-                "source": "https://github.com/DamienHarper/auditor/tree/3.3.3"
+                "source": "https://github.com/DamienHarper/auditor/tree/3.3.4"
             },
-            "time": "2025-01-14T07:47:19+00:00"
+            "time": "2025-08-27T08:55:07+00:00"
         },
         {
             "name": "damienharper/auditor-bundle",
@@ -12074,16 +12074,16 @@
         },
         {
             "name": "symfony/stimulus-bundle",
-            "version": "v2.29.2",
+            "version": "v2.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stimulus-bundle.git",
-                "reference": "7788eaec422c0d606e042e947faff9ed793954c6"
+                "reference": "668b9efe9d0ab8b4e50091263171609e0459c0c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/7788eaec422c0d606e042e947faff9ed793954c6",
-                "reference": "7788eaec422c0d606e042e947faff9ed793954c6",
+                "url": "https://api.github.com/repos/symfony/stimulus-bundle/zipball/668b9efe9d0ab8b4e50091263171609e0459c0c8",
+                "reference": "668b9efe9d0ab8b4e50091263171609e0459c0c8",
                 "shasum": ""
             },
             "require": {
@@ -12123,7 +12123,7 @@
                 "symfony-ux"
             ],
             "support": {
-                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.29.2"
+                "source": "https://github.com/symfony/stimulus-bundle/tree/v2.30.0"
             },
             "funding": [
                 {
@@ -12143,7 +12143,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-18T09:13:24+00:00"
+            "time": "2025-08-27T15:25:48+00:00"
         },
         {
             "name": "symfony/stopwatch",
@@ -13648,12 +13648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "c43f08de9a7df66d4102d082c09f11e31291ece0"
+                "reference": "bfec0dd5f9c7fcf9a99449dca9f4f957caf8c899"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/c43f08de9a7df66d4102d082c09f11e31291ece0",
-                "reference": "c43f08de9a7df66d4102d082c09f11e31291ece0",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/bfec0dd5f9c7fcf9a99449dca9f4f957caf8c899",
+                "reference": "bfec0dd5f9c7fcf9a99449dca9f4f957caf8c899",
                 "shasum": ""
             },
             "require": {
@@ -13725,7 +13725,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/develop"
             },
-            "time": "2025-08-25T17:35:43+00:00"
+            "time": "2025-08-28T07:57:31+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
