@@ -7,22 +7,22 @@ namespace App\EventSubscriber\Notify\PlayerChart;
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
 use ProjetNormandie\UserBundle\Entity\User;
-use VideoGamesRecords\CoreBundle\Event\PlayerChartUpdated;
+use VideoGamesRecords\CoreBundle\Event\Admin\AdminPlayerChartUpdated;
 
 final class NotifyPlayerChartUpdatedSubscriber extends AbstractNotifySubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
         return [
-            PlayerChartUpdated::class => 'sendMessage',
+            AdminPlayerChartUpdated::class => 'sendMessage',
         ];
     }
 
     /**
-     * @param PlayerChartUpdated $event
+     * @param AdminPlayerChartUpdated $event
      * @throws ORMException
      */
-    public function sendMessage(PlayerChartUpdated $event): void
+    public function sendMessage(AdminPlayerChartUpdated $event): void
     {
         $playerChart = $event->getPlayerChart();
         $this->messageBuilder
