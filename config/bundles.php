@@ -1,6 +1,7 @@
 <?php
 
 return [
+    ProjetNormandie\TwitchBundle\ProjetNormandieTwitchBundle::class => ['all' => true],
     ProjetNormandie\MessageBundle\ProjetNormandieMessageBundle::class => ['all' => true],
     ProjetNormandie\ForumBundle\ProjetNormandieForumBundle::class => ['all' => true],
     VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreBundle::class => ['all' => true],

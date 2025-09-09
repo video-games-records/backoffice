@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1706b593952086bc857a00bb0ca7077d",
+    "content-hash": "508fee9f288301a7a8815814e8e0dce2",
     "packages": [
         {
             "name": "a2lix/auto-form-bundle",
@@ -1564,16 +1564,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.13",
+            "version": "3.356.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b"
+                "reference": "54013c2919ba3f5e1ffb88001a14705129b76415"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54013c2919ba3f5e1ffb88001a14705129b76415",
+                "reference": "54013c2919ba3f5e1ffb88001a14705129b76415",
                 "shasum": ""
             },
             "require": {
@@ -1655,9 +1655,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.14"
             },
-            "time": "2025-09-08T18:37:19+00:00"
+            "time": "2025-09-09T18:07:13+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -5175,6 +5175,71 @@
             "time": "2024-06-24T21:25:28+00:00"
         },
         {
+            "name": "nicklaw5/twitch-api-php",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nicklaw5/twitch-api-php.git",
+                "reference": "0d6ddb08b0816b7f27121375309b6c96d299be72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nicklaw5/twitch-api-php/zipball/0d6ddb08b0816b7f27121375309b6c96d299be72",
+                "reference": "0d6ddb08b0816b7f27121375309b6c96d299be72",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "guzzlehttp/guzzle": "~6.0|~7.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.10",
+                "phpspec/phpspec": "^7.2",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TwitchApi\\": "src/",
+                    "NewTwitchApi\\": "src/NewTwitchApi",
+                    "TwitchApi\\Tests\\": "test/TwitchApi"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicholas Law",
+                    "homepage": "https://github.com/nicklaw5"
+                },
+                {
+                    "name": "Brian Zwahr",
+                    "homepage": "https://github.com/echosa"
+                },
+                {
+                    "name": "Brandin Arsenault",
+                    "homepage": "https://github.com/brandinarsenault"
+                }
+            ],
+            "description": "A Twitch API client for PHP.",
+            "homepage": "http://github.com/nicklaw5/twitch-api-php",
+            "keywords": [
+                "api",
+                "twitch",
+                "twitch-api",
+                "twitch-tv",
+                "twitch.tv"
+            ],
+            "support": {
+                "issues": "https://github.com/nicklaw5/twitch-api-php/issues",
+                "source": "https://github.com/nicklaw5/twitch-api-php/tree/v7.2.0"
+            },
+            "time": "2023-06-13T04:20:11+00:00"
+        },
+        {
             "name": "paragonie/constant_time_encoding",
             "version": "v3.0.0",
             "source": {
@@ -5810,6 +5875,67 @@
                 "source": "https://github.com/projet-normandie/message-bundle/tree/develop"
             },
             "time": "2025-07-28T07:49:09+00:00"
+        },
+        {
+            "name": "projet-normandie/twitch-bundle",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/projet-normandie/twitch-bundle.git",
+                "reference": "301227c519234a79f40385d1956129058c109612"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/projet-normandie/twitch-bundle/zipball/301227c519234a79f40385d1956129058c109612",
+                "reference": "301227c519234a79f40385d1956129058c109612",
+                "shasum": ""
+            },
+            "require": {
+                "api-platform/doctrine-orm": "^4.0",
+                "api-platform/symfony": "^4.0",
+                "doctrine/doctrine-bundle": "~2.0",
+                "doctrine/orm": "^2.17 || ^3.0",
+                "nicklaw5/twitch-api-php": "^7.0",
+                "php": ">=8.3",
+                "sonata-project/admin-bundle": "^4.0",
+                "sonata-project/doctrine-orm-admin-bundle": "^4.8",
+                "symfony/dependency-injection": "^6.4 | ^7.2",
+                "symfony/messenger": "^6.4 | ^7.2",
+                "symfony/validator": "^6.4 | ^7.2"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan": "^1.10",
+                "phpstan/phpstan-doctrine": "^1.3",
+                "phpstan/phpstan-symfony": "^1.3",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/phpunit-bridge": "^6.2 | ^7.2"
+            },
+            "default-branch": true,
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "ProjetNormandie\\TwitchBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Benard David",
+                    "email": "magicbart@gmail.com",
+                    "homepage": "https://www.vgr-magicbart.com/",
+                    "role": "Developper"
+                }
+            ],
+            "description": "ProjetNormandie TwitchBundle",
+            "support": {
+                "issues": "https://github.com/projet-normandie/twitch-bundle/issues",
+                "source": "https://github.com/projet-normandie/twitch-bundle/tree/develop"
+            },
+            "time": "2025-04-17T18:09:20+00:00"
         },
         {
             "name": "projet-normandie/user-bundle",
@@ -15351,6 +15477,7 @@
         "projet-normandie/article-bundle": 20,
         "projet-normandie/forum-bundle": 20,
         "projet-normandie/message-bundle": 20,
+        "projet-normandie/twitch-bundle": 20,
         "projet-normandie/user-bundle": 20,
         "sonata-project/translation-bundle": 20,
         "video-games-records/core-bundle": 20,

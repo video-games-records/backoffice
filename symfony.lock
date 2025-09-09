@@ -200,6 +200,9 @@
     "projet-normandie/message-bundle": {
         "version": "dev-develop"
     },
+    "projet-normandie/twitch-bundle": {
+        "version": "dev-develop"
+    },
     "projet-normandie/user-bundle": {
         "version": "dev-main"
     },
