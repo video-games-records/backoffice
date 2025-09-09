@@ -48,6 +48,37 @@ steps:
       branch:
         - dev
 
+  - name: deploy-production
+    image: alpine:3
+    commands:
+      - apk update && apk upgrade
+      - apk add openssh bash rsync
+      - mkdir -p ~/.ssh
+      - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_ed25519
+      - printf "Host *\n  StrictHostKeyChecking no\n  UserKnownHostsFile=/dev/null\n" > ~/.ssh/config
+      - chmod 600 ~/.ssh/id_ed25519
+      - eval $(ssh-agent -s)
+      - ssh-add ~/.ssh/id_ed25519
+      - rsync -rav --quiet --delete -e "ssh -p $PRODUCTION_SSH_PORT" --exclude='.env.local' --exclude='config/jwt' --exclude='var' ./ $PRODUCTION_SSH_USER@$PRODUCTION_SSH_HOST:$PRODUCTION_PATH/
+      - ssh -p $PRODUCTION_SSH_PORT $PRODUCTION_SSH_USER@$PRODUCTION_SSH_HOST "cd $PRODUCTION_PATH && bin/console cache:clear"
+    environment:
+      SSH_PRIVATE_KEY:
+        from_secret: production_ssh_key
+      PRODUCTION_SSH_PORT:
+        from_secret: production_ssh_port
+      PRODUCTION_SSH_HOST:
+        from_secret: production_ssh_host
+      PRODUCTION_SSH_USER:
+        from_secret: production_ssh_user
+      PRODUCTION_PATH:
+        from_secret: production_path
+    depends_on:
+      - build
+    when:
+      branch:
+        - main
+
 trigger:
   branch:
     - dev
+    - main
