@@ -203,6 +203,16 @@ readonly class RateLimitSubscriber implements EventSubscriberInterface
             return true;
         }
 
+        // Skip for messenger monitor routes (avoid rate limiting monitoring interfaces)
+        if (str_contains($path, 'messenger') && str_contains($path, 'monitor')) {
+            return true;
+        }
+
+        // Skip rate limiting for admin routes if user has admin role
+        if (str_starts_with($path, '/admin/') && $this->isAdminUser()) {
+            return true;
+        }
+
         return false;
     }
 
@@ -219,6 +229,26 @@ readonly class RateLimitSubscriber implements EventSubscriberInterface
         }
 
         return $ip;
+    }
+
+    /**
+     * Check if current user has admin privileges
+     */
+    private function isAdminUser(): bool
+    {
+        if (!$this->security) {
+            return false;
+        }
+
+        $user = $this->security->getUser();
+        if (!$user) {
+            return false;
+        }
+
+        // Check if user has admin role - adjust the role names as needed for your app
+        return $this->security->isGranted('ROLE_ADMIN') || 
+               $this->security->isGranted('ROLE_SUPER_ADMIN') || 
+               $this->security->isGranted('ROLE_SONATA_ADMIN');
     }
 
     /**
