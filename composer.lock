@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "508fee9f288301a7a8815814e8e0dce2",
+    "content-hash": "0734e1b3d979aa39458702f7a1c2012c",
     "packages": [
         {
             "name": "a2lix/auto-form-bundle",
@@ -5690,16 +5690,16 @@
         },
         {
             "name": "projet-normandie/article-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/article-bundle.git",
-                "reference": "4de7c485bbe490d34d5bddce7280417111b0d743"
+                "reference": "d9aeb0630c3b4fc1f0d34d69100257ce25b85e1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/article-bundle/zipball/4de7c485bbe490d34d5bddce7280417111b0d743",
-                "reference": "4de7c485bbe490d34d5bddce7280417111b0d743",
+                "url": "https://api.github.com/repos/projet-normandie/article-bundle/zipball/d9aeb0630c3b4fc1f0d34d69100257ce25b85e1a",
+                "reference": "d9aeb0630c3b4fc1f0d34d69100257ce25b85e1a",
                 "shasum": ""
             },
             "require": {
@@ -5730,7 +5730,6 @@
                 "symfony/http-client": "^7.3",
                 "symfony/phpunit-bridge": "^7.3"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -5752,22 +5751,22 @@
             "description": "Normandie ArticleBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/article-bundle/issues",
-                "source": "https://github.com/projet-normandie/article-bundle/tree/develop"
+                "source": "https://github.com/projet-normandie/article-bundle/tree/main"
             },
-            "time": "2025-08-21T11:39:17+00:00"
+            "time": "2025-09-10T13:13:37+00:00"
         },
         {
             "name": "projet-normandie/forum-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/forum-bundle.git",
-                "reference": "eedcdcf23deb55eb5d8bf52226a338148ded0005"
+                "reference": "0474426a67289abae412df7cbb94bcf1a06f7405"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/eedcdcf23deb55eb5d8bf52226a338148ded0005",
-                "reference": "eedcdcf23deb55eb5d8bf52226a338148ded0005",
+                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/0474426a67289abae412df7cbb94bcf1a06f7405",
+                "reference": "0474426a67289abae412df7cbb94bcf1a06f7405",
                 "shasum": ""
             },
             "require": {
@@ -5792,7 +5791,6 @@
                 "squizlabs/php_codesniffer": "^3.7",
                 "symfony/phpunit-bridge": "^6.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -5813,22 +5811,22 @@
             "description": "Normandie ForumBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/forum-bundle/issues",
-                "source": "https://github.com/projet-normandie/forum-bundle/tree/develop"
+                "source": "https://github.com/projet-normandie/forum-bundle/tree/main"
             },
-            "time": "2025-08-20T06:37:29+00:00"
+            "time": "2025-09-10T13:14:14+00:00"
         },
         {
             "name": "projet-normandie/message-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/message-bundle.git",
-                "reference": "ec331eac5fb7f0bc37481eeb673a561015f4f407"
+                "reference": "8d509d1fbe31222429305179d8463974cecbbf3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/message-bundle/zipball/ec331eac5fb7f0bc37481eeb673a561015f4f407",
-                "reference": "ec331eac5fb7f0bc37481eeb673a561015f4f407",
+                "url": "https://api.github.com/repos/projet-normandie/message-bundle/zipball/8d509d1fbe31222429305179d8463974cecbbf3f",
+                "reference": "8d509d1fbe31222429305179d8463974cecbbf3f",
                 "shasum": ""
             },
             "require": {
@@ -5852,7 +5850,6 @@
                 "squizlabs/php_codesniffer": "^3.7",
                 "symfony/phpunit-bridge": "^6.2 | ^7.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -5872,22 +5869,22 @@
             "description": "Normandie Message bundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/message-bundle/issues",
-                "source": "https://github.com/projet-normandie/message-bundle/tree/develop"
+                "source": "https://github.com/projet-normandie/message-bundle/tree/main"
             },
-            "time": "2025-07-28T07:49:09+00:00"
+            "time": "2025-09-10T13:14:52+00:00"
         },
         {
             "name": "projet-normandie/twitch-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/twitch-bundle.git",
-                "reference": "301227c519234a79f40385d1956129058c109612"
+                "reference": "2340d488ca2600ece2b6f864b05eec198ce4b3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/twitch-bundle/zipball/301227c519234a79f40385d1956129058c109612",
-                "reference": "301227c519234a79f40385d1956129058c109612",
+                "url": "https://api.github.com/repos/projet-normandie/twitch-bundle/zipball/2340d488ca2600ece2b6f864b05eec198ce4b3f4",
+                "reference": "2340d488ca2600ece2b6f864b05eec198ce4b3f4",
                 "shasum": ""
             },
             "require": {
@@ -5911,7 +5908,6 @@
                 "squizlabs/php_codesniffer": "^3.7",
                 "symfony/phpunit-bridge": "^6.2 | ^7.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -5933,22 +5929,22 @@
             "description": "ProjetNormandie TwitchBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/twitch-bundle/issues",
-                "source": "https://github.com/projet-normandie/twitch-bundle/tree/develop"
+                "source": "https://github.com/projet-normandie/twitch-bundle/tree/main"
             },
-            "time": "2025-04-17T18:09:20+00:00"
+            "time": "2025-04-17T18:09:41+00:00"
         },
         {
             "name": "projet-normandie/user-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/user-bundle.git",
-                "reference": "bf287179be722d6bccacdbafc3bfaaaab50cf859"
+                "reference": "289184ce9178552289ca93fb5b5735453b835fbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/bf287179be722d6bccacdbafc3bfaaaab50cf859",
-                "reference": "bf287179be722d6bccacdbafc3bfaaaab50cf859",
+                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/289184ce9178552289ca93fb5b5735453b835fbc",
+                "reference": "289184ce9178552289ca93fb5b5735453b835fbc",
                 "shasum": ""
             },
             "require": {
@@ -5984,7 +5980,6 @@
                 "symfony/test-pack": "^1.1",
                 "symfony/yaml": "^6.4"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "extra": {
                 "symfony": {
@@ -6011,9 +6006,9 @@
             "description": "Normandie UserBundle",
             "support": {
                 "issues": "https://github.com/projet-normandie/user-bundle/issues",
-                "source": "https://github.com/projet-normandie/user-bundle/tree/develop"
+                "source": "https://github.com/projet-normandie/user-bundle/tree/main"
             },
-            "time": "2025-08-25T17:59:25+00:00"
+            "time": "2025-09-10T13:12:38+00:00"
         },
         {
             "name": "psr/cache",
@@ -13972,16 +13967,16 @@
         },
         {
             "name": "video-games-records/core-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "1264357cbc3077854e8aecf6798df7071404153e"
+                "reference": "7b07568ac66f40fc41f0f423042b97e61da02e52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/1264357cbc3077854e8aecf6798df7071404153e",
-                "reference": "1264357cbc3077854e8aecf6798df7071404153e",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/7b07568ac66f40fc41f0f423042b97e61da02e52",
+                "reference": "7b07568ac66f40fc41f0f423042b97e61da02e52",
                 "shasum": ""
             },
             "require": {
@@ -14029,7 +14024,6 @@
                 "symfony/phpunit-bridge": "^7.0",
                 "symfony/web-profiler-bundle": "^6.4 | ^7.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -14051,22 +14045,22 @@
             "description": "VideoGamesRecords CoreBundle",
             "support": {
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
-                "source": "https://github.com/video-games-records/core-bundle/tree/develop"
+                "source": "https://github.com/video-games-records/core-bundle/tree/main"
             },
-            "time": "2025-09-09T15:25:10+00:00"
+            "time": "2025-09-10T13:08:38+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
-            "version": "dev-develop",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/dwh-bundle.git",
-                "reference": "b4fcaaf18a4498f06971ef92b38282d4fe37d446"
+                "reference": "7afa795eb8afed800e855b2c83cf4a2535bcf0f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/dwh-bundle/zipball/b4fcaaf18a4498f06971ef92b38282d4fe37d446",
-                "reference": "b4fcaaf18a4498f06971ef92b38282d4fe37d446",
+                "url": "https://api.github.com/repos/video-games-records/dwh-bundle/zipball/7afa795eb8afed800e855b2c83cf4a2535bcf0f8",
+                "reference": "7afa795eb8afed800e855b2c83cf4a2535bcf0f8",
                 "shasum": ""
             },
             "require": {
@@ -14081,7 +14075,7 @@
                 "symfony/http-kernel": "^6.4 | ^7.2",
                 "symfony/messenger": "^6.4 | ^7.2",
                 "symfony/scheduler": "^6.4 | ^7.2",
-                "video-games-records/core-bundle": "dev-develop"
+                "video-games-records/core-bundle": "dev-main"
             },
             "require-dev": {
                 "phpstan/extension-installer": "^1.3",
@@ -14093,7 +14087,6 @@
                 "symfony/phpunit-bridge": "^7.0",
                 "symfony/web-profiler-bundle": "^6.4 | ^7.2"
             },
-            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -14115,9 +14108,9 @@
             "description": "VideoGamesRecords DwhBundle",
             "support": {
                 "issues": "https://github.com/video-games-records/dwh-bundle/issues",
-                "source": "https://github.com/video-games-records/dwh-bundle/tree/develop"
+                "source": "https://github.com/video-games-records/dwh-bundle/tree/main"
             },
-            "time": "2025-07-05T07:24:51+00:00"
+            "time": "2025-09-10T13:11:57+00:00"
         },
         {
             "name": "webmozart/assert",
@@ -14890,16 +14883,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.22",
+            "version": "2.1.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4"
+                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/41600c8379eb5aee63e9413fe9e97273e25d57e4",
-                "reference": "41600c8379eb5aee63e9413fe9e97273e25d57e4",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
+                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
                 "shasum": ""
             },
             "require": {
@@ -14944,20 +14937,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-08-04T19:17:37+00:00"
+            "time": "2025-09-10T11:42:22+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-doctrine.git",
-                "reference": "eeff19808f8ae3a6f7c4e43e388a2848eb2b0865"
+                "reference": "934f5734812341358fc41c44006b30fa00c785f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/eeff19808f8ae3a6f7c4e43e388a2848eb2b0865",
-                "reference": "eeff19808f8ae3a6f7c4e43e388a2848eb2b0865",
+                "url": "https://api.github.com/repos/phpstan/phpstan-doctrine/zipball/934f5734812341358fc41c44006b30fa00c785f0",
+                "reference": "934f5734812341358fc41c44006b30fa00c785f0",
                 "shasum": ""
             },
             "require": {
@@ -15014,9 +15007,9 @@
             "description": "Doctrine extensions for PHPStan",
             "support": {
                 "issues": "https://github.com/phpstan/phpstan-doctrine/issues",
-                "source": "https://github.com/phpstan/phpstan-doctrine/tree/2.0.5"
+                "source": "https://github.com/phpstan/phpstan-doctrine/tree/2.0.6"
             },
-            "time": "2025-09-07T11:52:30+00:00"
+            "time": "2025-09-10T07:06:30+00:00"
         },
         {
             "name": "phpstan/phpstan-symfony",
