@@ -43,8 +43,4 @@ services:
         tags:
             - { name: messenger.middleware }
 
-    App\Scheduler\Scheduler:
-        arguments:
-            $environment: '%kernel.environment%'
-
 
