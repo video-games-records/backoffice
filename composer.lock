@@ -1564,16 +1564,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.14",
+            "version": "3.356.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "54013c2919ba3f5e1ffb88001a14705129b76415"
+                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/54013c2919ba3f5e1ffb88001a14705129b76415",
-                "reference": "54013c2919ba3f5e1ffb88001a14705129b76415",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ee8e1516b950e33c617ac17d6352ec5421253cff",
+                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff",
                 "shasum": ""
             },
             "require": {
@@ -1655,9 +1655,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.15"
             },
-            "time": "2025-09-09T18:07:13+00:00"
+            "time": "2025-09-10T18:05:36+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -2392,16 +2392,16 @@
         },
         {
             "name": "doctrine/doctrine-bundle",
-            "version": "2.16.1",
+            "version": "2.16.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/DoctrineBundle.git",
-                "reference": "152d5083f0cd205a278131dc4351a8c94d007fe1"
+                "reference": "1c10de0fe995f01eca6b073d1c2549ef0b603a7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/152d5083f0cd205a278131dc4351a8c94d007fe1",
-                "reference": "152d5083f0cd205a278131dc4351a8c94d007fe1",
+                "url": "https://api.github.com/repos/doctrine/DoctrineBundle/zipball/1c10de0fe995f01eca6b073d1c2549ef0b603a7f",
+                "reference": "1c10de0fe995f01eca6b073d1c2549ef0b603a7f",
                 "shasum": ""
             },
             "require": {
@@ -2435,12 +2435,11 @@
                 "phpstan/phpstan": "2.1.1",
                 "phpstan/phpstan-phpunit": "2.0.3",
                 "phpstan/phpstan-strict-rules": "^2",
-                "phpunit/phpunit": "^9.6.22",
+                "phpunit/phpunit": "^10.5.53",
                 "psr/log": "^1.1.4 || ^2.0 || ^3.0",
                 "symfony/doctrine-messenger": "^6.4 || ^7.0",
                 "symfony/expression-language": "^6.4 || ^7.0",
                 "symfony/messenger": "^6.4 || ^7.0",
-                "symfony/phpunit-bridge": "^7.2",
                 "symfony/property-info": "^6.4 || ^7.0",
                 "symfony/security-bundle": "^6.4 || ^7.0",
                 "symfony/stopwatch": "^6.4 || ^7.0",
@@ -2495,7 +2494,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/DoctrineBundle/issues",
-                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.16.1"
+                "source": "https://github.com/doctrine/DoctrineBundle/tree/2.16.2"
             },
             "funding": [
                 {
@@ -2511,7 +2510,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-05T15:24:53+00:00"
+            "time": "2025-09-10T19:14:48+00:00"
         },
         {
             "name": "doctrine/doctrine-migrations-bundle",
@@ -6522,16 +6521,16 @@
         },
         {
             "name": "sonata-project/admin-bundle",
-            "version": "4.38.1",
+            "version": "4.38.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/SonataAdminBundle.git",
-                "reference": "58ca7145d9d34038e6b3ed57b1617e0f0f2632d2"
+                "reference": "6da6082cb9c7b191726d4f0b0e1aa79a609e224f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/58ca7145d9d34038e6b3ed57b1617e0f0f2632d2",
-                "reference": "58ca7145d9d34038e6b3ed57b1617e0f0f2632d2",
+                "url": "https://api.github.com/repos/sonata-project/SonataAdminBundle/zipball/6da6082cb9c7b191726d4f0b0e1aa79a609e224f",
+                "reference": "6da6082cb9c7b191726d4f0b0e1aa79a609e224f",
                 "shasum": ""
             },
             "require": {
@@ -6637,7 +6636,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sonata-project/SonataAdminBundle/issues",
-                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.38.1"
+                "source": "https://github.com/sonata-project/SonataAdminBundle/tree/4.38.2"
             },
             "funding": [
                 {
@@ -6657,7 +6656,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-05T07:40:05+00:00"
+            "time": "2025-09-10T17:26:52+00:00"
         },
         {
             "name": "sonata-project/block-bundle",
@@ -13971,12 +13970,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "7b07568ac66f40fc41f0f423042b97e61da02e52"
+                "reference": "d26898256b8d33bdf20c18c04d61d98750f3aaf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/7b07568ac66f40fc41f0f423042b97e61da02e52",
-                "reference": "7b07568ac66f40fc41f0f423042b97e61da02e52",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/d26898256b8d33bdf20c18c04d61d98750f3aaf4",
+                "reference": "d26898256b8d33bdf20c18c04d61d98750f3aaf4",
                 "shasum": ""
             },
             "require": {
@@ -14047,7 +14046,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/main"
             },
-            "time": "2025-09-10T13:08:38+00:00"
+            "time": "2025-09-11T14:50:41+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",

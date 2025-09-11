@@ -6,6 +6,7 @@ namespace App\EventSubscriber\Notify\Badge;
 
 use App\EventSubscriber\Notify\AbstractNotifySubscriberInterface;
 use Doctrine\ORM\Exception\ORMException;
+use ProjetNormandie\UserBundle\Entity\User;
 use VideoGamesRecords\CoreBundle\Event\TeamBadgeLost;
 
 final class NotifyTeamBadgeLostSubscriber extends AbstractNotifySubscriberInterface
@@ -59,8 +60,9 @@ final class NotifyTeamBadgeLostSubscriber extends AbstractNotifySubscriberInterf
      */
     private function sendMessage($user_id, $game): void
     {
+        /** @var User $recipient */
         $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($user_id);
-        $url = '/' . $recipient->getLocale() . '/' . $game->getUrl();
+        $url = '/' . $recipient->getLanguage() . '/' . $game->getUrl();
         $this->messageBuilder
             ->setObject($this->translator->trans('teamBadge.lose.object', array(), null, $recipient->getLocale()))
             ->setMessage(
@@ -68,7 +70,7 @@ final class NotifyTeamBadgeLostSubscriber extends AbstractNotifySubscriberInterf
                     $this->translator->trans('teamBadge.lose.message', array(), null, $recipient->getLocale()),
                     $recipient->getUsername(),
                     $url,
-                    $game->getName($recipient->getLocale())
+                    $game->getName($recipient->getLanguage())
                 )
             )
             ->setRecipient($recipient)
