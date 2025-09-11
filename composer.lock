@@ -5938,12 +5938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/user-bundle.git",
-                "reference": "289184ce9178552289ca93fb5b5735453b835fbc"
+                "reference": "8274db3610c5ba3c1eef1b79d1aaf907595f982c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/289184ce9178552289ca93fb5b5735453b835fbc",
-                "reference": "289184ce9178552289ca93fb5b5735453b835fbc",
+                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/8274db3610c5ba3c1eef1b79d1aaf907595f982c",
+                "reference": "8274db3610c5ba3c1eef1b79d1aaf907595f982c",
                 "shasum": ""
             },
             "require": {
@@ -6007,7 +6007,7 @@
                 "issues": "https://github.com/projet-normandie/user-bundle/issues",
                 "source": "https://github.com/projet-normandie/user-bundle/tree/main"
             },
-            "time": "2025-09-10T13:12:38+00:00"
+            "time": "2025-09-11T16:43:11+00:00"
         },
         {
             "name": "psr/cache",
