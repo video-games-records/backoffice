@@ -64,10 +64,10 @@ final class NotifyTeamBadgeLostSubscriber extends AbstractNotifySubscriberInterf
         $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')->find($user_id);
         $url = '/' . $recipient->getLanguage() . '/' . $game->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('teamBadge.lose.object', array(), null, $recipient->getLocale()))
+            ->setObject($this->translator->trans('teamBadge.lose.object', array(), null, $recipient->getLanguage()))
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('teamBadge.lose.message', array(), null, $recipient->getLocale()),
+                    $this->translator->trans('teamBadge.lose.message', array(), null, $recipient->getLanguage()),
                     $recipient->getUsername(),
                     $url,
                     $game->getName($recipient->getLanguage())
