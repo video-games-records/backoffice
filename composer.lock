@@ -1564,16 +1564,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.15",
+            "version": "3.356.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff"
+                "reference": "1b7a3277801e5179a4ee931397c69f30d29001c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ee8e1516b950e33c617ac17d6352ec5421253cff",
-                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1b7a3277801e5179a4ee931397c69f30d29001c2",
+                "reference": "1b7a3277801e5179a4ee931397c69f30d29001c2",
                 "shasum": ""
             },
             "require": {
@@ -1655,9 +1655,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.15"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.16"
             },
-            "time": "2025-09-10T18:05:36+00:00"
+            "time": "2025-09-11T18:06:11+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -5938,12 +5938,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/user-bundle.git",
-                "reference": "8274db3610c5ba3c1eef1b79d1aaf907595f982c"
+                "reference": "542837b122819aa2e6ad79acab836303abafb464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/8274db3610c5ba3c1eef1b79d1aaf907595f982c",
-                "reference": "8274db3610c5ba3c1eef1b79d1aaf907595f982c",
+                "url": "https://api.github.com/repos/projet-normandie/user-bundle/zipball/542837b122819aa2e6ad79acab836303abafb464",
+                "reference": "542837b122819aa2e6ad79acab836303abafb464",
                 "shasum": ""
             },
             "require": {
@@ -6007,7 +6007,7 @@
                 "issues": "https://github.com/projet-normandie/user-bundle/issues",
                 "source": "https://github.com/projet-normandie/user-bundle/tree/main"
             },
-            "time": "2025-09-11T16:43:11+00:00"
+            "time": "2025-09-12T10:45:00+00:00"
         },
         {
             "name": "psr/cache",
@@ -7122,16 +7122,16 @@
         },
         {
             "name": "sonata-project/form-extensions",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sonata-project/form-extensions.git",
-                "reference": "9964f1c4c0a8d7da4d432e0bad8502dfa2087495"
+                "reference": "8df37cec0da5b06577e271089c6eea4107af3d02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sonata-project/form-extensions/zipball/9964f1c4c0a8d7da4d432e0bad8502dfa2087495",
-                "reference": "9964f1c4c0a8d7da4d432e0bad8502dfa2087495",
+                "url": "https://api.github.com/repos/sonata-project/form-extensions/zipball/8df37cec0da5b06577e271089c6eea4107af3d02",
+                "reference": "8df37cec0da5b06577e271089c6eea4107af3d02",
                 "shasum": ""
             },
             "require": {
@@ -7199,7 +7199,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sonata-project/form-extensions/issues",
-                "source": "https://github.com/sonata-project/form-extensions/tree/2.5.0"
+                "source": "https://github.com/sonata-project/form-extensions/tree/2.5.1"
             },
             "funding": [
                 {
@@ -7219,7 +7219,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-16T19:49:39+00:00"
+            "time": "2025-09-12T07:20:15+00:00"
         },
         {
             "name": "sonata-project/translation-bundle",
@@ -14882,16 +14882,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.23",
+            "version": "2.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5"
+                "reference": "5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
-                "reference": "a34502adbbd5c2366b5a97679848a5ace4f6f2f5",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2",
+                "reference": "5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2",
                 "shasum": ""
             },
             "require": {
@@ -14936,7 +14936,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-10T11:42:22+00:00"
+            "time": "2025-09-12T07:54:24+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
