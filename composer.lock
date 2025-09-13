@@ -1564,16 +1564,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.16",
+            "version": "3.356.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1b7a3277801e5179a4ee931397c69f30d29001c2"
+                "reference": "d0357fbe2535bb7d832e594a4ff2ff8da29d229c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1b7a3277801e5179a4ee931397c69f30d29001c2",
-                "reference": "1b7a3277801e5179a4ee931397c69f30d29001c2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d0357fbe2535bb7d832e594a4ff2ff8da29d229c",
+                "reference": "d0357fbe2535bb7d832e594a4ff2ff8da29d229c",
                 "shasum": ""
             },
             "require": {
@@ -1586,7 +1586,7 @@
                 "guzzlehttp/psr7": "^2.4.5",
                 "mtdowling/jmespath.php": "^2.8.0",
                 "php": ">=8.1",
-                "psr/http-message": "^2.0"
+                "psr/http-message": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "andrewsville/php-token-reflection": "^1.4",
@@ -1655,9 +1655,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.16"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.17"
             },
-            "time": "2025-09-11T18:06:11+00:00"
+            "time": "2025-09-12T18:07:37+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -3806,20 +3806,20 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.411.0",
+            "version": "v0.411.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "3d616fcefdb8e6c598b2d007d4155fe516b91abd"
+                "reference": "04c4a6caf7e443afc76f70827814656c7b03cbd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/3d616fcefdb8e6c598b2d007d4155fe516b91abd",
-                "reference": "3d616fcefdb8e6c598b2d007d4155fe516b91abd",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/04c4a6caf7e443afc76f70827814656c7b03cbd1",
+                "reference": "04c4a6caf7e443afc76f70827814656c7b03cbd1",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^9.6"
@@ -3844,9 +3844,9 @@
             ],
             "support": {
                 "issues": "https://github.com/googleapis/google-api-php-client-services/issues",
-                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.411.0"
+                "source": "https://github.com/googleapis/google-api-php-client-services/tree/v0.411.1"
             },
-            "time": "2025-09-05T20:24:02+00:00"
+            "time": "2025-09-12T01:08:23+00:00"
         },
         {
             "name": "google/auth",
@@ -13970,12 +13970,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "d26898256b8d33bdf20c18c04d61d98750f3aaf4"
+                "reference": "7b695a613889986fdad2fb463bbb9e4b2c5c7af7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/d26898256b8d33bdf20c18c04d61d98750f3aaf4",
-                "reference": "d26898256b8d33bdf20c18c04d61d98750f3aaf4",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/7b695a613889986fdad2fb463bbb9e4b2c5c7af7",
+                "reference": "7b695a613889986fdad2fb463bbb9e4b2c5c7af7",
                 "shasum": ""
             },
             "require": {
@@ -14046,7 +14046,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/main"
             },
-            "time": "2025-09-11T14:50:41+00:00"
+            "time": "2025-09-13T13:33:50+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
@@ -14882,16 +14882,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.24",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2"
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2",
-                "reference": "5a9f28e9ec3fe8b1b7cbd42b3935a66b569f2ff2",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4087d28bd252895874e174d65e26b2c202ed893a",
+                "reference": "4087d28bd252895874e174d65e26b2c202ed893a",
                 "shasum": ""
             },
             "require": {
@@ -14936,7 +14936,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-12T07:54:24+00:00"
+            "time": "2025-09-12T14:26:42+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
