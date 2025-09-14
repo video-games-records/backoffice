@@ -40,6 +40,7 @@
         "symfony/asset": "^7.3",
         "symfony/brevo-mailer": "^7.3",
         "symfony/console": "^7.3",
+        "symfony/discord-notifier": "7.3.*",
         "symfony/doctrine-messenger": "^7.3",
         "symfony/dotenv": "^7.3",
         "symfony/event-dispatcher": "^7.3",
