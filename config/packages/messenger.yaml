@@ -98,7 +98,7 @@ framework:
         routing:
             Symfony\Component\Mailer\Messenger\SendEmailMessage: async
             VideoGamesRecords\CoreBundle\Scheduler\Message\DailyRanking: async
-            #Symfony\Component\Notifier\Message\ChatMessage: async
+            Symfony\Component\Notifier\Message\ChatMessage: async
             #Symfony\Component\Notifier\Message\SmsMessage: async
             #Player Ranking
             VideoGamesRecords\CoreBundle\Message\Player\UpdatePlayerChartRank: player_chart_rank
