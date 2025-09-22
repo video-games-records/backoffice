@@ -8,6 +8,10 @@ doctrine:
                 use_savepoints: true
                 mapping_types:
                     enum: string
+                options:
+                    # Configuration pour réduire les deadlocks
+                    1013: 30  # PDO::MYSQL_ATTR_USE_BUFFERED_QUERY
+                    1014: true # PDO::MYSQL_ATTR_LOCAL_INFILE
             dwh:
                 driver: pdo_mysql
                 url: '%env(resolve:DATABASE_URL_DWH)%'
