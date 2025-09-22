@@ -20,79 +20,105 @@ framework:
                 options:
                     queue_name: player_chart_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 500
+                    multiplier: 2
             player_group_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_group_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             player_game_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_game_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             player_serie_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_serie_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             player_platform_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_platform_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             player_data:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_data
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             player_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: player_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_chart_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_chart_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_group_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_group_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_game_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_game_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_serie_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_serie_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_data:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_data
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
             team_rank:
                 dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
                 options:
                     queue_name: team_rank
                 retry_strategy:
-                    max_retries: 0
+                    max_retries: 3
+                    delay: 1000
+                    multiplier: 2
 
 
         routing:
