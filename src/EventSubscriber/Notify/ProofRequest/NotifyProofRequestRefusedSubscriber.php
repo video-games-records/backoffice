@@ -32,10 +32,22 @@ final class NotifyProofRequestRefusedSubscriber extends AbstractNotifySubscriber
             ->find($proofRequest->getPlayerRequesting()->getUserId());
         $url = '/' . $recipient->getLanguage() . '/' . $proofRequest->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof_request.notification.refuse.object', array(), null, $recipient->getLanguage()))
+            ->setObject(
+                $this->translator->trans(
+                    'proof_request_refused.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof_request.notification.refuse.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'proof_request_refused.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),

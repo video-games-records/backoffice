@@ -37,10 +37,22 @@ final class NotifyPlayerBadgeLostSubscriber extends AbstractNotifySubscriberInte
             ->find($playerBadge->getPlayer()->getUserId());
         $url = '/' . $recipient->getLanguage() . '/' . $game->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('playerBadge.lose.object', array(), null, $recipient->getLanguage()))
+            ->setObject(
+                $this->translator->trans(
+                    'player_badge_lost.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('playerBadge.lose.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'player_badge_lost.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $game->getName($recipient->getLanguage())

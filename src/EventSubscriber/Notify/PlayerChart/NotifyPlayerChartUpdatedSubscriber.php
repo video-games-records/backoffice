@@ -36,11 +36,21 @@ final class NotifyPlayerChartUpdatedSubscriber extends AbstractNotifySubscriberI
         $url = '/' . $recipient->getLanguage() . '/' . $playerChart->getUrl();
         $this->messageBuilder
             ->setObject(
-                $this->translator->trans('playerChart.updated.object', array(), null, $recipient->getLanguage())
+                $this->translator->trans(
+                    'player_chart_updated.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
             )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('playerChart.updated.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'player_chart_updated.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $playerChart->getChart()->getCompleteName($recipient->getLanguage())

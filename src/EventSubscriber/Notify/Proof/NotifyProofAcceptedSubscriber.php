@@ -34,10 +34,22 @@ final class NotifyProofAcceptedSubscriber extends AbstractNotifySubscriberInterf
             ->find($proof->getPlayerChart()->getPlayer()->getUserId());
         $url = '/' . $recipient->getLanguage() . '/' . $proof->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof.notification.accept.object', array(), null, $recipient->getLanguage()))
+            ->setObject(
+                $this->translator->trans(
+                    'proof_accepted.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof.notification.accept.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'proof_accepted.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $proof->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),

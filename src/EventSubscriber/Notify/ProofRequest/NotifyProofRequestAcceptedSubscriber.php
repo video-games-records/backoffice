@@ -33,10 +33,22 @@ final class NotifyProofRequestAcceptedSubscriber extends AbstractNotifySubscribe
             ->find($proofRequest->getPlayerChart()->getPlayer()->getUserId());
         $url = '/' . $recipient->getLanguage() . '/' . $proofRequest->getPlayerChart()->getUrl();
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof_request.notification.confirm.object', array(), null, $recipient->getLanguage()))
+            ->setObject(
+                $this->translator->trans(
+                    'proof_request_confirm.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof_request.notification.confirm.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'proof_request_confirm.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage())
@@ -50,10 +62,22 @@ final class NotifyProofRequestAcceptedSubscriber extends AbstractNotifySubscribe
         $recipient = $this->em->getRepository('ProjetNormandie\UserBundle\Entity\User')
             ->find($proofRequest->getPlayerRequesting()->getUserId());
         $this->messageBuilder
-            ->setObject($this->translator->trans('proof_request.notification.accept.object', array(), null, $recipient->getLanguage()))
+            ->setObject(
+                $this->translator->trans(
+                    'proof_request_accepted.object',
+                    [],
+                    'VgrCoreNotification',
+                    $recipient->getLanguage()
+                )
+            )
             ->setMessage(
                 sprintf(
-                    $this->translator->trans('proof_request.notification.accept.message', array(), null, $recipient->getLanguage()),
+                    $this->translator->trans(
+                        'proof_request_accepted.message',
+                        [],
+                        'VgrCoreNotification',
+                        $recipient->getLanguage()
+                    ),
                     $recipient->getUsername(),
                     $url,
                     $proofRequest->getPlayerChart()->getChart()->getCompleteName($recipient->getLanguage()),
