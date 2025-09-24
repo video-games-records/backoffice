@@ -13,7 +13,7 @@ class SetLocaleSubscriber implements EventSubscriberInterface
 {
     private string $defaultLocale = 'en';
 
-    private array $supportedLocales = ['en', 'fr'];
+    private array $supportedLocales = ['en', 'fr', 'es', 'ja', 'de'];
 
     public function onKernelRequest(RequestEvent $event): void
     {
