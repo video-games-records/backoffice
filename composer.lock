@@ -1594,16 +1594,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.29",
+            "version": "3.356.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3e413221956aa969f379ff6fa67a303ce76aad13"
+                "reference": "8ee5c1f3849489452ee4eec01a9cdd338defc246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3e413221956aa969f379ff6fa67a303ce76aad13",
-                "reference": "3e413221956aa969f379ff6fa67a303ce76aad13",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ee5c1f3849489452ee4eec01a9cdd338defc246",
+                "reference": "8ee5c1f3849489452ee4eec01a9cdd338defc246",
                 "shasum": ""
             },
             "require": {
@@ -1685,9 +1685,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.29"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.30"
             },
-            "time": "2025-09-30T18:12:45+00:00"
+            "time": "2025-10-01T18:19:37+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -14106,12 +14106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "129fda85795fbb4109b00146968e5af291836b35"
+                "reference": "647831f2cba2df601006af3c4675607bcd1439b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/129fda85795fbb4109b00146968e5af291836b35",
-                "reference": "129fda85795fbb4109b00146968e5af291836b35",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/647831f2cba2df601006af3c4675607bcd1439b7",
+                "reference": "647831f2cba2df601006af3c4675607bcd1439b7",
                 "shasum": ""
             },
             "require": {
@@ -14182,7 +14182,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/main"
             },
-            "time": "2025-10-01T08:48:09+00:00"
+            "time": "2025-10-02T15:39:16+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",

@@ -100,7 +100,8 @@
             "ProjetNormandie\\PartnerBundle\\": "../../bundles/projet-normandie/partner-bundle/src",
             "ProjetNormandie\\TwitchBundle\\": "../../bundles/projet-normandie/twitch-bundle/src",
             "VideoGamesRecords\\CoreBundle\\": "../../bundles/video-games-records/core-bundle/src",
-            "VideoGamesRecords\\DwhBundle\\": "../../bundles/video-games-records/dwh-bundle/src"
+            "VideoGamesRecords\\DwhBundle\\": "../../bundles/video-games-records/dwh-bundle/src",
+            "VideoGamesRecords\\IgdbBundle\\": "../../bundles/video-games-records/igdb-bundle/src"
         }
     },
     "replace": {
