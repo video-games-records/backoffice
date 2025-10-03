@@ -1594,16 +1594,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.30",
+            "version": "3.356.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8ee5c1f3849489452ee4eec01a9cdd338defc246"
+                "reference": "3e74e822177581c90faed3d607b022af9962bd00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ee5c1f3849489452ee4eec01a9cdd338defc246",
-                "reference": "8ee5c1f3849489452ee4eec01a9cdd338defc246",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3e74e822177581c90faed3d607b022af9962bd00",
+                "reference": "3e74e822177581c90faed3d607b022af9962bd00",
                 "shasum": ""
             },
             "require": {
@@ -1685,9 +1685,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.30"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.31"
             },
-            "time": "2025-10-01T18:19:37+00:00"
+            "time": "2025-10-02T18:59:02+00:00"
         },
         {
             "name": "aws/aws-sdk-php-symfony",
@@ -5741,12 +5741,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/projet-normandie/forum-bundle.git",
-                "reference": "0474426a67289abae412df7cbb94bcf1a06f7405"
+                "reference": "d50ab5762120baf379066b7e322f5ed6accc0e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/0474426a67289abae412df7cbb94bcf1a06f7405",
-                "reference": "0474426a67289abae412df7cbb94bcf1a06f7405",
+                "url": "https://api.github.com/repos/projet-normandie/forum-bundle/zipball/d50ab5762120baf379066b7e322f5ed6accc0e33",
+                "reference": "d50ab5762120baf379066b7e322f5ed6accc0e33",
                 "shasum": ""
             },
             "require": {
@@ -5793,7 +5793,7 @@
                 "issues": "https://github.com/projet-normandie/forum-bundle/issues",
                 "source": "https://github.com/projet-normandie/forum-bundle/tree/main"
             },
-            "time": "2025-09-10T13:14:14+00:00"
+            "time": "2025-10-03T13:50:49+00:00"
         },
         {
             "name": "projet-normandie/message-bundle",
@@ -14106,12 +14106,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/video-games-records/core-bundle.git",
-                "reference": "647831f2cba2df601006af3c4675607bcd1439b7"
+                "reference": "1ee889a6b66f1abc85c06d86c6a96077be015a03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/647831f2cba2df601006af3c4675607bcd1439b7",
-                "reference": "647831f2cba2df601006af3c4675607bcd1439b7",
+                "url": "https://api.github.com/repos/video-games-records/core-bundle/zipball/1ee889a6b66f1abc85c06d86c6a96077be015a03",
+                "reference": "1ee889a6b66f1abc85c06d86c6a96077be015a03",
                 "shasum": ""
             },
             "require": {
@@ -14182,7 +14182,7 @@
                 "issues": "https://github.com/video-games-records/core-bundle/issues",
                 "source": "https://github.com/video-games-records/core-bundle/tree/main"
             },
-            "time": "2025-10-02T15:39:16+00:00"
+            "time": "2025-10-03T13:52:28+00:00"
         },
         {
             "name": "video-games-records/dwh-bundle",
@@ -15018,16 +15018,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.1.29",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpstan/phpstan-phar-composer-source.git",
-                "reference": "git"
-            },
+            "version": "2.1.30",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d618573eed4a1b6b75e37b2e0b65ac65c885d88e",
-                "reference": "d618573eed4a1b6b75e37b2e0b65ac65c885d88e",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
+                "reference": "a4a7f159927983dd4f7c8020ed227d80b7f39d7d",
                 "shasum": ""
             },
             "require": {
@@ -15072,7 +15067,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-09-25T06:58:18+00:00"
+            "time": "2025-10-02T16:07:52+00:00"
         },
         {
             "name": "phpstan/phpstan-doctrine",
