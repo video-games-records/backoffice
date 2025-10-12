@@ -6,6 +6,7 @@ return [
     ProjetNormandie\ForumBundle\ProjetNormandieForumBundle::class => ['all' => true],
     VideoGamesRecords\CoreBundle\VideoGamesRecordsCoreBundle::class => ['all' => true],
     VideoGamesRecords\DwhBundle\VideoGamesRecordsDwhBundle::class => ['all' => true],
+    VideoGamesRecords\IgdbBundle\VideoGamesRecordsIgdbBundle::class => ['all' => true],
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     Symfony\Bundle\TwigBundle\TwigBundle::class => ['all' => true],
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],

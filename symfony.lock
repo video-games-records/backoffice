@@ -596,7 +596,10 @@
         "version": "dev-develop"
     },
     "video-games-records/dwh-bundle": {
-        "version": "dev-develop"
+        "version": "dev-main"
+    },
+    "video-games-records/igdb-bundle": {
+        "version": "dev-main"
     },
     "zenstruck/messenger-monitor-bundle": {
         "version": "0.5",
